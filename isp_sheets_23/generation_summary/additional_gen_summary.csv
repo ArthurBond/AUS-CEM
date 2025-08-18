@@ -1,0 +1,14 @@
+Generator,Generator type,Region,ISP sub-region,REZ location,Fuel/technology type,Maximum capacity (MW),Summer rating (MW),Summer typical rating (MW),Winter rating (MW),Maintenance duration (%),FOM ($/kW/annum),VOM ($/MWh sent-out),Heat rate (GJ/MWh HHV s.o.),Fuel cost ($/GJ),Emissions (kg/MWh),MLF,Auxiliary load (%),SRMC ($/MWh),Expected retirement year
+Coppabella Wind Farm,Wind,NSW,SNSW,Tumut,Wind,290,270,270,270,0.00,26.73,0.00,0.00,0.00,0.00,0.94,0.07, -   ,2057
+Derby Solar Project BESS,Battery Storage,VIC,VIC,Murray River,Battery Storage,85,85,85,85,0.00,10.80,0.00,0.00,0.00,0.00,0.98,0.00, -   ,2045
+Fulham Solar Farm,Large scale Solar PV,VIC,VIC,Gippsland,Solar,101,83,83,83,0.00,18.18,0.00,0.00,0.00,0.00,0.98,0.02, -   ,2055
+Fulham Solar Farm BESS,Battery Storage,VIC,VIC,Gippsland,Battery Storage,65,65,65,65,0.00,7.59,0.00,0.00,0.00,0.00,0.98,0.00, -   ,2045
+Goulburn River BESS,Battery Storage,NSW,CNSW,N/A,Battery Storage,49,49,49,49,0.00,30.69,0.00,0.00,0.00,0.00,0.98,0.00, -   ,2045
+Horsham Solar Farm BESS,Battery Storage,VIC,VIC,Western Victoria,Battery Storage,50,50,50,50,0.00,10.80,0.00,0.00,0.00,0.00,0.88,0.00, -   ,2045
+Kiamal Solar Farm – Stage 2,Large scale Solar PV,VIC,VIC,Murray River,Solar,150,142,149,150,0.00,18.18,0.00,0.00,0.00,0.00,0.88,0.02, -   ,2056
+Kiamal Solar Farm – Stage 2 BESS,Battery Storage,VIC,VIC,Murray River,Battery Storage,150,142,149,150,0.00,10.80,0.00,0.00,0.00,0.00,0.88,0.00, -   ,2046
+Kogan Gas,Hydrogen-based gas turbines,QLD,SQ,N/A,Hydrogen-based gas turbines,200,168,184,200,1.37,69.50,40.63,12.72,0.00,580.98,0.97,1.50, 40.63 ,2066
+Limondale BESS,Battery Storage,NSW,SNSW,South West NSW,Battery Storage,50,50,50,50,0.00,30.69,0.00,0.00,0.00,0.00,0.83,0.00, -   ,2045
+New England Solar Farm - stage 2,Large scale Solar PV,NSW,NNSW,New England,Solar,320,320,320,320,0.00,18.18,0.00,0.00,0.00,0.00,0.87,0.02, -   ,2055
+Silver City Energy Storage,Battery Storage,NSW,SNSW,Broken Hill,Battery Storage,200,200,200,200,0.00,30.69,0.00,0.00,0.00,0.00,0.83,0.00, -   ,2057
+Smithfield BESS,Battery Storage,NSW,SNW,N/A,Battery Storage,65,65,65,65,0.00,10.80,0.00,0.00,0.00,0.00,1.00,0.00, -   ,2045

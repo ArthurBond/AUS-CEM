@@ -1,0 +1,22 @@
+Flow path,Option Name,Forward increase,Reverse increase,Cost estimate ($ million),Easement length (km),REZ,Hosting capacity increase,Storage additional,Build cost note
+CQ-NQ,Option 1,1100,1100,1239,350,Q3,1100,,
+CQ-NQ,Option 2,3000,3000,4184,750,Q2,800,,
+CQ-NQ,Option 2,3000,3000,4184,750,Q3,3000,,
+CQ-NQ,Option 2,3000,3000,4184,750,NQ2,3000,,
+CQ-GG,Option 1,2600,500,1300,0,-,-,,
+SQ-CQ,Option 1,900,900,820,250,Q6,900,,
+SQ-CQ,Option 2,0,300,77,0,-,-,,
+SQ-CQ,Option 3,300,300,-,-,Q6,300,,
+SQ-CQ,Option 4,1500,1500,1853,250,Q6,1500,,
+SQ-CQ,Option 5,3150,3150,3287,492,Q1,3000,1998,
+SQ-CQ,Option 5,3150,3150,3287,492,Q2,3000,1998,
+SQ-CQ,Option 5,3150,3150,3287,492,Q3,3000,1998,
+SQ-CQ,Option 5,3150,3150,3287,492,Q4,3000,1998,
+SQ-CQ,Option 5,3150,3150,3287,492,Q5,3000,1998,
+SQ-CQ,Option 5,3150,3150,3287,492,Q6,3000,1998,
+NNSW–SQ,Option 1,730,900,930,460.5,-,-,-,NSW
+NNSW–SQ,Option 1,730,900,964,460.5,-,-,-,QLD
+NNSW–SQ,Option 2,
+NNSW–SQ,Option 3,200,200,,,,,,-
+NNSW–SQ,Option 4,1800,2000,4279,765,-,-,,-
+NNSW–SQ,Option 5,300,2250,2600,616,

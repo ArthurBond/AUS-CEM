@@ -1,0 +1,55 @@
+Generator,Generator type,Region,ISP sub-region,REZ location,Fuel/technology type,Maximum capacity (MW),Summer rating (MW),Summer typical rating (MW),Winter rating (MW),Maintenance duration (%),FOM ($/kW/annum),VOM ($/MWh sent-out),Heat rate (GJ/MWh HHV s.o.),Fuel cost ($/GJ),Emissions (kg/MWh),MLF,Auxiliary load (%),SRMC ($/MWh),Expected retirement year
+Adelaide Desalination Plant BESS,Battery Storage,SA,CSA,N/A,Battery Storage,6,6,6,6,0.00,10.80,0.00,0.00,0.00,0.00,1.00,0.00,0,2041
+Aldoga BESS Stage 1,Battery Storage,QLD,GG,N/A,Battery Storage,400,400,400,400,0.00,7.59,0.00,0.00,0.00,0.00,0.93,0.00,0,2045
+Ballarat Energy Storage System,Battery Storage,VIC,VIC,Western Victoria,Battery Storage,30,19,20,30,0.00,7.59,0.00,0.00,0.00,0.00,0.98,0.00,0,2033
+Blyth BESS,Battery Storage,SA,CSA,Mid-North SA,Battery Storage,200,194,200,200,0.00,10.80,0.00,0.00,0.00,0.00,0.90,0.00,0,2044
+Bolivar Waste Water Treatment BESS,Battery Storage,SA,CSA,N/A,Battery Storage,2,2,2,2,0.00,10.80,0.00,0.00,0.00,0.00,1.00,0.00,0,2045
+Bouldercombe Battery project,Battery Storage,QLD,CQ,Fitzroy,Battery Storage,50,50,50,50,0.00,10.80,0.00,0.00,0.00,0.00,0.92,0.00,0,2042
+Broken Hill BESS,Battery Storage,NSW,SNSW,Broken Hill,Battery Storage,50,50,50,50,0.00,7.59,0.00,0.00,0.00,0.00,0.83,0.00,0,2043
+Bulgana Green Power Hub BESS,Battery Storage,VIC,VIC,Western Victoria,Battery Storage,20,20,20,20,0.00,10.80,0.00,0.00,0.00,0.00,0.88,0.00,0,2049
+Bungama Solar BESS,Battery Storage,SA,CSA,Mid-North SA,Battery Storage,150,150,150,150,0.00,10.80,0.00,0.00,0.00,0.00,0.90,0.00,0,2045
+Capital Battery,Battery Storage,NSW,SNSW,Tumut,Battery Storage,100,99,100,100,0.00,10.80,0.00,0.00,0.00,0.00,0.96,0.00,0,2048
+Chinchilla BESS,Battery Storage,QLD,SQ,Darling Downs,Battery Storage,100,100,100,100,0.00,10.80,0.00,0.00,0.00,0.00,0.97,0.00,0,2038
+Christies Beach Wastewater Treatment Plant BESS,Battery Storage,SA,CSA,N/A,Battery Storage,2,2,2,2,0.00,10.80,0.00,0.00,0.00,0.00,1.00,0.00,0,2041
+Dalrymple BESS,Battery Storage,SA,CSA,Yorke Peninsula,Battery Storage,30,0,0,30,0.00,7.59,0.00,0.00,0.00,0.00,0.90,0.00,0,2030
+Darlington Point Energy Storage System,Battery Storage,NSW,SNSW,N/A,Battery Storage,25,25,25,25,0.00,10.80,0.00,0.00,0.00,0.00,0.90,0.00,0,2051
+Eraring Big Battery,Battery Storage,NSW,SNW,Hunter Central Coast,Battery Storage,460,460,460,460,0.00,10.80,0.00,0.00,0.00,0.00,0.98,0.00,0,2045
+Gannawarra Energy Storage System,Battery Storage,VIC,VIC,Murray River,Battery Storage,25,25,25,25,0.00,10.80,0.00,0.00,0.00,0.00,1.03,0.00,0,2033
+Gnarwarre BESS,Battery Storage,VIC,VIC,South West Victoria,Battery Storage,290,250,250,250,0.00,10.80,0.00,0.00,0.00,0.00,0.98,0.00,0,2054
+Happy Valley Reservoir BESS,Battery Storage,SA,CSA,N/A,Battery Storage,4,4,4,4,0.00,10.80,0.00,0.00,0.00,0.00,1.00,0.00,0,2041
+Hazelwood BESS,Battery Storage,VIC,VIC,Gippsland,Battery Storage,200,150,150,150,0.00,7.59,0.00,0.00,0.00,0.00,0.98,0.00,0,2043
+Hornsdale Power Reserve Unit 1,Battery Storage,SA,CSA,Mid-North SA,Battery Storage,150,150,150,150,0.00,7.59,0.00,0.00,0.00,0.00,0.97,0.00,0,2057
+Koorangie Energy Storage System,Battery Storage,VIC,VIC,Murray River,Battery Storage,185,185,185,185,0.00,10.80,0.00,0.00,0.00,0.00,1.03,0.00,0,2055
+Lake Bonney BESS,Battery Storage,SA,SESA,South East SA,Battery Storage,25,25,25,25,0.00,10.80,0.00,0.00,0.00,0.00,0.98,0.00,0,2034
+Liddell BESS,Battery Storage,NSW,CNSW,Hunter-Central Coast,Battery Storage,500,500,500,500,0.00,17.32,0.00,0.00,0.00,0.00,0.98,0.00,0,2045
+Lincoln Gap Wind Farm BESS,Battery Storage,SA,CSA,Northern SA,Battery Storage,10,10,10,10,0.00,7.59,0.00,0.00,0.00,0.00,0.96,0.00,0,2045
+Lockhart Hybrid Facility - Battery,Battery Storage,NSW,SNSW,Wagga Wagga,Battery Storage,10,10,10,10,0.00,10.80,0.00,0.00,0.00,0.00,0.84,0.00,0,2045
+Melbourne Renewable Energy Hub - Side A,Battery Storage,VIC,VIC,N/A,Battery Storage,600,600,600,600,0.00,10.80,0.00,0.00,0.00,0.00,0.99,0.00,0,2050
+Mornington BESS,Battery Storage,VIC,VIC,N/A,Battery Storage,240,240,240,240,0.00,10.80,0.00,0.00,0.00,0.00,0.99,0.00,0,2046
+Mortlake Battery,Battery Storage,VIC,VIC,South West Victoria,Battery Storage,300,300,300,300,0.00,10.80,0.00,0.00,0.00,0.00,0.99,0.00,0,2047
+Mt Fox BESS,Battery Storage,QLD,NQ,Northern Qld,Battery Storage,300,300,300,300,0.00,10.80,0.00,0.00,0.00,0.00,0.96,0.00,0,2046
+New England Solar Farm BESS,Battery Storage,NSW,NNSW,New England,Battery Storage,200,200,200,200,0.00,7.59,0.00,0.00,0.00,0.00,0.87,0.00,0,2046
+Orana BESS,Battery Storage,NSW,CNSW,Central-West Orana,Battery Storage,408,368,408,408,0.00,10.80,0.00,0.00,0.00,0.00,0.94,0.00,0,2065
+Philip Island BESS,Battery Storage,VIC,VIC,N/A,Battery Storage,5,5,5,5,0.00,10.80,0.00,0.00,0.00,0.00,0.98,0.00,0,2038
+Queanbeyan BESS,Battery Storage,NSW,SNSW,Tumut,Battery Storage,10,10,10,10,0.00,10.80,0.00,0.00,0.00,0.00,0.96,0.00,0,2042
+Quorn Park BESS,Battery Storage,NSW,CNSW,N/A,Battery Storage,28,20,20,20,0.00,10.80,0.00,0.00,0.00,0.00,0.99,0.00,0,2045
+Rangebank BESS,Battery Storage,VIC,VIC,N/A,Battery Storage,200,200,200,200,0.00,10.80,0.00,0.00,0.00,0.00,0.98,0.00,0,2044
+Richmond Valley BESS,Battery Storage,NSW,NNSW,N/A,Battery Storage,275,275,275,275,0.00,30.69,0.00,0.00,0.00,0.00,0.87,0.00,0,2046
+Riverina Energy Storage System 1,Battery Storage,NSW,SNSW,N/A,Battery Storage,60,60,60,60,0.00,10.80,0.00,0.00,0.00,0.00,0.90,0.00,0,2051
+Riverina Energy Storage System 2,Battery Storage,NSW,SNSW,N/A,Battery Storage,65,65,65,65,0.00,10.80,0.00,0.00,0.00,0.00,0.90,0.00,0,2051
+Sapphire Wind Farm BESS,Battery Storage,NSW,NNSW,New England,Battery Storage,30,30,30,30,0.00,7.59,0.00,0.00,0.00,0.00,0.91,0.00,0,2033
+Stanwell BESS,Battery Storage,QLD,CQ,Fitzroy,Battery Storage,150,150,150,150,0.00,10.80,0.00,0.00,0.00,0.00,0.92,0.00,0,2047
+Swanbank BESS,Battery Storage,QLD,SQ,N/A,Battery Storage,250,250,250,250,0.00,10.80,0.00,0.00,0.00,0.00,1.00,0.00,0,2045
+Tailem Bend Battery Project,Battery Storage,SA,CSA,N/A,Battery Storage,42,42,42,42,0.00,10.80,0.00,0.00,0.00,0.00,1.00,0.00,0,2048
+Tamworth BESS,Battery Storage,NSW,NNSW,N/A,Battery Storage,200,200,200,200,0.00,10.80,0.00,0.00,0.00,0.00,0.98,0.00,0,2046
+Tarong BESS,Battery Storage,QLD,SQ,Darling Downs,Battery Storage,300,300,300,300,0.00,7.59,0.00,0.00,0.00,0.00,0.98,0.00,0,2044
+Templers BESS,Battery Storage,SA,CSA,Mid-North SA,Battery Storage,111,111,111,111,0.00,10.80,0.00,0.00,0.00,0.00,1.00,0.00,0,2049
+Terang BESS,Battery Storage,VIC,VIC,South West Victoria,Battery Storage,102,102,102,102,0.00,10.80,0.00,0.00,0.00,0.00,0.98,0.00,0,2045
+Torrens Island BESS,Battery Storage,SA,CSA,N/A,Battery Storage,251,251,251,251,0.00,7.59,0.00,0.00,0.00,0.00,1.00,0.00,0,2043
+Ulinda Park BESS,Battery Storage,QLD,SQ,Darling Downs,Battery Storage,155,155,155,155,0.00,10.80,0.00,0.00,0.00,0.00,0.97,0.00,0,2063
+Victorian Big Battery,Battery Storage,VIC,VIC,N/A,Battery Storage,300,50,50,300,0.00,10.80,0.00,0.00,0.00,0.00,0.99,0.00,0,2041
+Wallgrove Grid Battery project,Battery Storage,NSW,SNW,N/A,Battery Storage,50,50,50,50,0.00,10.80,0.00,0.00,0.00,0.00,1.00,0.00,0,2036
+Wandoan South BESS,Battery Storage,QLD,SQ,Darling Downs,Battery Storage,100,100,100,100,0.00,10.80,0.00,0.00,0.00,0.00,0.98,0.00,0,2051
+Waratah Super Battery,Battery Storage,NSW,SNW,N/A,Battery Storage,850,778,850,150,0.00,10.80,0.00,0.00,0.00,0.00,0.98,0.00,0,2065
+Western Downs Battery,Battery Storage,QLD,SQ,Darling Downs,Battery Storage,336,255,255,255,0.00,7.59,0.00,0.00,0.00,0.00,0.97,0.00,0,2048
+Wooreen Energy Storage System,Battery Storage,VIC,VIC,Gippsland,Battery Storage,350,350,350,350,0.00,17.32,0.00,0.00,0.00,0.00,0.98,0.00,0,2046

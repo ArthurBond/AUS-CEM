@@ -1,0 +1,20 @@
+Generator type,Proportion out (%),Days out equivalent
+OCGT (small GT),0.82,3
+OCGT (large GT),1.37,5
+CCGT,3.51,13
+CCGT with CCS,3.51,13
+Biomass,6.25,23
+Large scale Solar PV,0.00,0
+Solar Thermal (15hrs storage),1.92,7
+Battery storage (1hr storage),0.00,0
+Battery storage (2hrs storage),0.00,0
+Battery storage (4hrs storage),0.00,0
+Battery Storage (8hrs storage),0.00,0
+Wind,0.00,0
+Wind - offshore (fixed),0.00,0
+Wind - offshore (floating),0.00,0
+Pumped Hydro (8hrs storage),0.27,1
+Pumped Hydro (24hrs storage),0.27,1
+Pumped Hydro (48hrs storage),0.27,1
+BOTN - Cethana,0.27,1
+Hydrogen reciprocating engines,0.74,3

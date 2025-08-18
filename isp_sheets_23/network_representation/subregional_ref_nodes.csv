@@ -1,0 +1,13 @@
+NEM Region,ISP Sub-region,Sub-region Reference Node,Bus,Voltage (kV)
+Queensland,Northern Queensland (NQ),Chalumbin 275 kV,NQ,275
+Queensland,Central Queensland (CQ),Broadsound 275 kV,CQ,275
+Queensland,Gladstone Grid (GG),Calliope River 275 kV,GG,275
+Queensland,South Queensland (SQ),South Pine 275 kV,SQ,275
+New South Wales,Northern New South Wales (NNSW),Armidale 330 kV,NNSW,330
+New South Wales,Central New South Wales (CNSW),Wellington 330 kV,CNSW,330
+New South Wales,South NSW (SNSW),Canberra 330 kV,SNSW,330
+New South Wales,Sydney / New Castle / Wollongong (SNW),Sydney West 330 kV,SNW,330
+Victoria,Victoria (VIC),Thomastown 66 kV,VIC,66
+South Australia,Central South Australia (CSA),Torrens Island 66 kV,CSA,66
+South Australia,South East South Australia (SESA),South East 132 kV,SESA,132
+Tasmania,Tasmania (TAS),George Town 220 kV,TAS,220

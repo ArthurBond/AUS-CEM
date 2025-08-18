@@ -1,0 +1,28 @@
+Generator,Generator type,Region,ISP sub-region,REZ location,Fuel/technology type,Maximum capacity (MW),Summer rating (MW),Summer typical rating (MW),Winter rating (MW),Maintenance duration (%),FOM ($/kW/annum),VOM ($/MWh sent-out),Heat rate (GJ/MWh HHV s.o.),Fuel cost ($/GJ),Emissions (kg/MWh),MLF,Auxiliary load (%),SRMC ($/MWh),Expected retirement year
+Kurri Kurri OCGT,OCGT,NSW,SNW,N/A,OCGT,750,660,660,660,1.37,10.91,7.81,10.93,17.38,342.68,0.98,0.61, 197.80 ,2064
+Tallawarra B*,OCGT,NSW,SNW,N/A,OCGT,320,318,318,320,1.37,10.91,7.81,10.93,16.84,342.68,0.99,0.61, 191.89 ,2053
+Kidston ,Pumped Hydro,QLD,NQ,N/A,Hydro,250,250,250,250,0.27,69.51,8.58,0.00,0.00,0.00,0.92,0.34, 8.58 ,2105
+Snowy 2.0,Pumped Hydro,NSW,SNSW,Tumut,Hydro,2200,2200,2200,2200,0.27,69.51,8.58,0.00,0.00,0.00,0.91,0.34, 8.58 ,2129
+Girgarre Solar Farm,Large scale Solar PV,VIC,VIC,Central North Vic,Solar,93,70,76,76,0.00,18.18,0.00,0.00,0.00,0.00,0.97,0.02, -   ,2054
+Glenrowan Solar Farm,Large scale Solar PV,VIC,VIC,Central North Vic,Solar,127,102,102,102,0.00,18.18,0.00,0.00,0.00,0.00,0.97,0.02, -   ,2053
+Mannum Solar Farm 2*,Large scale Solar PV,SA,CSA,Riverland,Solar,30,30,30,30,0.00,18.18,0.00,0.00,0.00,0.00,0.99,0.02, -   ,2058
+Metz Solar Farm,Large scale Solar PV,NSW,NNSW,New England,Solar,135,107,112,115,0.00,18.18,0.00,0.00,0.00,0.00,0.88,0.02, -   ,2052
+Riverina Solar Farm,Large scale Solar PV,NSW,SNSW,N/A,Solar,32,32,32,32,0.00,18.18,0.00,0.00,0.00,0.00,0.89,0.02, -   ,2047
+Sebastopol Solar Farm,Large scale Solar PV,NSW,SNSW,Wagga Wagga,Solar,90,86,90,90,0.00,18.18,0.00,0.00,0.00,0.00,0.91,0.02, -   ,2052
+Stubbo Solar Farm,Large scale Solar PV,NSW,CNSW,Central-West Orana,Solar,400,400,400,400,0.00,18.18,0.00,0.00,0.00,0.00,0.93,0.02, -   ,2073
+Walla Walla Solar Farm,Large scale Solar PV,NSW,SNSW,N/A,Solar,304,300,300,300,0.00,18.18,0.00,0.00,0.00,0.00,1.00,0.02, -   ,2054
+Wandoan South Solar Farm - stage 1,Large scale Solar PV,QLD,SQ,Darling Downs,Solar,160,125,125,125,0.00,18.18,0.00,0.00,0.00,0.00,0.98,0.02, -   ,2053
+Wellington North Solar Farm (Lightsource),Large scale Solar PV,NSW,CNSW,Central-West Orana,Solar,437,330,330,330,0.00,18.18,0.00,0.00,0.00,0.00,0.94,0.02, -   ,2054
+Wollar Solar Farm,Large scale Solar PV,NSW,CNSW,N/A,Solar,280,280,280,280,0.00,18.18,0.00,0.00,0.00,0.00,0.93,0.02, -   ,2054
+Woolooga Solar Farm,Large scale Solar PV,QLD,SQ,Wide Bay,Solar,223,158,176,176,0.00,18.18,0.00,0.00,0.00,0.00,0.98,0.02, -   ,2052
+Wunghnu Solar Farm,Large scale Solar PV,VIC,VIC,N/A,Solar,94,75,75,75,0.00,18.18,0.00,0.00,0.00,0.00,1.00,0.02, -   ,2054
+Clarke Creek Wind Farm,Wind,QLD,CQ,Isaac,Wind,450,439,439,439,0.00,26.73,0.00,0.00,0.00,0.00,1.00,0.07, -   ,2049
+Crookwell 3 Wind Farm,Wind,NSW,SNSW,N/A,Wind,58,58,58,58,0.00,26.73,0.00,0.00,0.00,0.00,0.96,0.07, -   ,2054
+Flyers Creek Wind Farm,Wind,NSW,CNSW,Central-West Orana,Wind,146,146,146,146,0.00,26.73,0.00,0.00,0.00,0.00,0.93,0.07, -   ,2063
+Golden Plains Wind Farm East,Wind,VIC,VIC,South West Victoria,Wind,756,756,756,756,0.00,26.73,0.00,0.00,0.00,0.00,0.96,0.07, -   ,2054
+Goyder South Wind Farm 1A,Wind,SA,CSA,Mid-North SA,Wind,209,201,201,201,0.00,26.73,0.00,0.00,0.00,0.00,0.96,0.07, -   ,2048
+Goyder South Wind Farm 1B,Wind,SA,CSA,Mid-North SA,Wind,204,196,196,196,0.00,26.73,0.00,0.00,0.00,0.00,0.96,0.07, -   ,2049
+Hawkesdale Wind Farm,Wind,VIC,VIC,South West Victoria,Wind,97,97,97,97,0.00,26.73,0.00,0.00,0.00,0.00,0.98,0.07, -   ,2054
+Ryan Corner Wind Farm,Wind,VIC,VIC,South West Victoria,Wind,218,218,218,218,0.00,26.73,0.00,0.00,0.00,0.00,0.98,0.07, -   ,2054
+Rye Park Wind Farm,Wind,NSW,SNSW,N/A,Wind,396,225,335,386,0.00,26.73,0.00,0.00,0.00,0.00,1.00,0.07, -   ,2048
+Wambo Wind Farm,Wind,QLD,SQ,Darling Downs,Wind,252,252,252,252,0.00,26.73,0.00,0.00,0.00,0.00,0.97,0.07, -   ,2055

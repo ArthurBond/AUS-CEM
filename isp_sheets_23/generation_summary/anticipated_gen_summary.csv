@@ -1,0 +1,17 @@
+Generator,Generator type,Region,ISP sub-region,REZ location,Fuel/technology type,Maximum capacity (MW),Summer rating (MW),Summer typical rating (MW),Winter rating (MW),Maintenance duration (%),FOM ($/kW/annum),VOM ($/MWh sent-out),Heat rate (GJ/MWh HHV s.o.),Fuel cost ($/GJ),Emissions (kg/MWh),MLF,Auxiliary load (%),SRMC ($/MWh),Expected retirement year
+SA Hydrogen Turbine,Hydrogen-based gas turbines,SA,CSA,N/A,Hydrogen-based gas turbines,200,200,200,200,1.37,69.50,40.63,12.72,22.85,290.49,0.96,1.50, 331.30 ,2065
+Borumba,Pumped Hydro,QLD,SQ,Banana,Hydro,1998,0,0,0,0.27,69.51,8.58,0.00,0.00,0.00,0.97,0.34, 8.58 ,2130
+Aramara Solar Farm,Large scale Solar PV,QLD,SQ,Wide Bay,Solar,101,101,101,101,0.00,18.18,0.00,0.00,0.00,0.00,0.97,0.02, -   ,2048
+Banksia Solar Farm,Large scale Solar PV,QLD,SQ,Wide Bay,Solar,60,59,60,60,0.00,18.18,0.00,0.00,0.00,0.00,0.97,0.02, -   ,2055
+Culcairn Solar Farm,Large scale Solar PV,NSW,SNSW,Wagga Wagga,Solar,350,332,350,350,0.00,18.18,0.00,0.00,0.00,0.00,0.91,0.02, -   ,2050
+Cultana Solar Farm,Large scale Solar PV,SA,CSA,Northern SA,Solar,357,280,280,280,0.00,18.18,0.00,0.00,0.00,0.00,0.96,0.02, -   ,2055
+Derby Solar Farm,Large scale Solar PV,VIC,VIC,Murray River,Solar,95,95,95,95,0.00,18.18,0.00,0.00,0.00,0.00,0.94,0.02, -   ,2053
+Frasers Solar Farm,Large scale Solar PV,VIC,VIC,Gippsland,Solar,77,77,77,77,0.00,18.18,0.00,0.00,0.00,0.00,0.98,0.02, -   ,2054
+Horsham Solar Farm,Large scale Solar PV,VIC,VIC,Western Victoria,Solar,119,119,119,119,0.00,18.18,0.00,0.00,0.00,0.00,0.88,0.02, -   ,2066
+Lockhart Hybrid Facility - Solar,Large scale Solar PV,NSW,SNSW,Wagga Wagga,Solar,10,10,10,10,0.00,18.18,0.00,0.00,0.00,0.00,0.91,0.02, -   ,2055
+Quorn Park Solar Farm,Large scale Solar PV,NSW,CNSW,N/A,Solar,97,80,80,80,0.00,18.18,0.00,0.00,0.00,0.00,0.90,0.02, -   ,2055
+Tamworth Solar Farm,Large scale Solar PV,NSW,NNSW,New England,Solar,65,65,65,65,0.00,18.18,0.00,0.00,0.00,0.00,0.83,0.02, -   ,2053
+Tilbuster Solar Farm,Large scale Solar PV,NSW,NNSW,New England,Solar,249,201,201,201,0.00,18.18,0.00,0.00,0.00,0.00,0.87,0.02, -   ,2055
+MacIntyre Wind Farm,Wind,QLD,SQ,Darling Downs,Wind,923,923,923,923,0.00,26.73,0.00,0.00,0.00,0.00,1.00,0.07, -   ,2053
+Uungula Wind Farm,Wind,NSW,CNSW,Central-West Orana,Wind,414,0,414,414,0.00,26.73,0.00,0.00,0.00,0.00,0.96,0.07, -   ,2055
+Woolsthorpe Wind Farm,Wind,VIC,VIC,South West Victoria,Wind,73,73,73,73,0.00,26.73,0.00,0.00,0.00,0.00,0.99,0.07, -   ,2055

@@ -1,0 +1,20 @@
+Generator type,Summer Peak,Summer Typical,Winter Peak
+OCGT (small GT),98,100,100
+OCGT (large GT),86,92,99
+CCGT,87,93,98
+CCGT with CCS,81,86,90
+Biomass,95,100,100
+Large scale Solar PV,100,100,100
+Solar Thermal (15hrs storage),100,100,100
+Battery storage (1hr storage),100,100,100
+Battery storage (2hrs storage),100,100,100
+Battery storage (4hrs storage),100,100,100
+Battery Storage (8hrs storage),100,100,100
+Wind,100,100,100
+Wind - offshore (fixed),100,100,100
+Wind - offshore (floating),100,100,100
+Pumped Hydro (8hrs storage),100,100,100
+Pumped Hydro (24hrs storage),100,100,100
+Pumped Hydro (48hrs storage),100,100,100
+BOTN - Cethana,100,100,100
+Hydrogen reciprocating engines,100,100,100

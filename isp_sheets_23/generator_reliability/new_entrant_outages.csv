@@ -1,0 +1,21 @@
+Fuel type,Full outage (% of time),Partial outage (% of time),Full outage (hrs)
+OCGT (small GT),2.00,,75
+OCGT (large GT),2.00,,22
+CCGT,3.50,,54
+CCGT with CCS,3.50,,54
+Biomass,4.00,,22
+Large scale Solar PV,,,
+Solar Thermal (15hrs Storage),3.00,,
+Battery storage (1hr storage),2.25,,48
+Battery storage (2hrs storage),2.25,,48
+Battery storage (4hrs storage),2.25,,48
+Battery Storage (8hrs storage),2.25,,48
+Wind,,,
+Wind - offshore (fixed),,,
+Wind - offshore (floating),,,
+Pumped Hydro (8hrs storage),1.00,,27
+Pumped Hydro (24hrs storage),1.00,,27
+Pumped Hydro (48hrs storage),1.00,,27
+BOTN - Cethana,1.00,,27
+Hydrogen-based gas turbines,2.00,,22
+Hydrogen reciprocating engines,2.00,,22
