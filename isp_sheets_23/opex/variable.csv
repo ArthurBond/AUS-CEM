@@ -1,0 +1,71 @@
+Generator,Technology,Variable OPEX ($/MWh sent out)
+Bayswater,Steam Sub Critical,5.10 
+Eraring,Steam Sub Critical,5.10 
+Liddell,Steam Sub Critical,5.10 
+Mt Piper,Steam Sub Critical,5.10 
+Vales Point B,Steam Sub Critical,5.10 
+Callide B,Steam Sub Critical,5.02 
+Callide C,Steam Super Critical,5.02 
+Gladstone,Steam Sub Critical,5.02 
+Kogan Creek,Steam Super Critical,5.02 
+Millmerran,Steam Super Critical,5.02 
+Stanwell,Steam Sub Critical,5.02 
+Tarong,Steam Sub Critical,5.02 
+Tarong North,Steam Super Critical,5.02 
+Loy Yang A Power Station,Steam Sub Critical,4.78 
+Loy Yang B,Steam Sub Critical,4.78 
+Yallourn W,Steam Sub Critical,4.78 
+Tallawarra,CCGT,8.79 
+Condamine A,CCGT,8.79 
+Darling Downs,CCGT,8.79 
+Swanbank E GT,CCGT,8.79 
+Townsville Power Station,CCGT,8.79 
+Yarwun Cogen,CCGT,8.79 
+Osborne,CCGT,8.79 
+Pelican Point,CCGT,8.79 
+Tamar Valley Combined Cycle,CCGT,8.79 
+Colongra,OCGT,12.57 
+Smithfield Energy Facility,OCGT,12.57 
+Uranquinty,OCGT,12.57 
+Barcaldine Power Station,OCGT,12.57 
+Braemar,OCGT,12.57 
+Braemar 2 Power Station,OCGT,12.57 
+Mt Stuart,OCGT,12.57 
+Oakey Power Station,OCGT,12.57 
+Roma,OCGT,12.57 
+Dry Creek GT,OCGT,12.57 
+Hallett GT,OCGT,12.57 
+Ladbroke Grove,OCGT,12.57 
+Mintaro GT,OCGT,12.57 
+Port Lincoln GT,OCGT,12.57 
+Quarantine,OCGT,12.57 
+Snapper Point Power Station,OCGT,12.83 
+Snuggery,OCGT,12.57 
+Bell Bay Three,OCGT,12.57 
+Tamar Valley Peaking,OCGT,12.57 
+Bairnsdale,OCGT,12.57 
+Jeeralang A,OCGT,12.57 
+Jeeralang B,OCGT,12.57 
+Laverton North,OCGT,12.57 
+Mortlake,OCGT,12.57 
+Somerton,OCGT,12.57 
+Valley Power,OCGT,12.57 
+Newport,Gas-powered steam turbine,2.78 
+Torrens Island B,Gas-powered steam turbine,2.78 
+Angaston,Reciprocating Engine,13.34 
+Barker Inlet Power Station,Reciprocating Engine,13.34 
+Lonsdale,Reciprocating Engine,13.34 
+Port Stanvac 1,Reciprocating Engine,13.34 
+Kurri Kurri OCGT,OCGT,7.81 
+Tallawarra B,OCGT,7.81 
+Bolivar Power Station,OCGT,12.83 
+Kogan Gas,Hydrogen-based gas turbines,40.63 
+SA Hydrogen Turbine,Hydrogen-based gas turbines,40.63 
+All Battery storage (1hr storage),Battery storage (1hr storage),-   
+All Battery storage (2hrs storage),Battery storage (2hrs storage),-   
+All Battery storage (4hrs storage),Battery storage (4hrs storage),-   
+All Battery storage (8hrs storage),Battery storage (8hrs storage),-   
+All Hydro,Hydro,8.58 
+All Pumped Hydro,Pumped Hydro,-   
+All Large scale solar PV,Large scale Solar PV,-   
+All Wind,Wind,-   

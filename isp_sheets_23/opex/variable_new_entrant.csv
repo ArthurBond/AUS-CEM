@@ -1,0 +1,20 @@
+Generator,NSW Low,NSW Medium,NSW High,QLD Low,QLD Medium,QLD High,SA Low,SA Medium,SA High,TAS Low,TAS Medium,TAS High,VIC Low,VIC Medium,VIC High
+OCGT (small GT),12.83,13.86,15.01,12.83,14.37,16.04,12.83,14.37,15.91,12.83,13.99,15.01,12.83,13.22,13.47 
+OCGT (large GT),7.81,8.43,9.13,7.81,8.74,9.76,7.81,8.74,9.68,7.81,8.51,9.13,7.81,8.04,8.20 
+CCGT,3.96,4.27,4.63,3.96,4.43,4.95,3.96,4.43,4.91,3.96,4.31,4.63,3.96,4.08,4.15 
+CCGT with CCS,7.70,8.31,9.01,7.70,8.62,9.62,7.70,8.62,9.55,7.70,8.39,9.01,7.70,7.93,8.08 
+Biomass,10.33,11.16,12.09,10.33,11.57,12.91,10.33,11.57,12.81,10.33,11.26,12.09,10.33,10.64,10.85 
+Large scale Solar PV,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Solar Thermal (15hrs storage),-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Battery storage (1hr storage),-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Battery storage (2hrs storage),-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Battery storage (4hrs storage),-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Battery Storage (8hrs storage),-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Wind,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Wind - offshore (fixed),-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Wind - offshore (floating),-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Pumped Hydro (8hrs storage),-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Pumped Hydro (24hrs storage),-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Pumped Hydro (48hrs storage),-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+BOTN - Cethana,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   
+Hydrogen reciprocating engines,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-  ,-   

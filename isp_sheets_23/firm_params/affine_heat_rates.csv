@@ -1,0 +1,189 @@
+Station,Generating Unit,Technology Type,No load heat input (GJ/h),Marginal heat rate (GJ/MWh)
+Bayswater,BW01,Steam Sub Critical,420.42,8.81
+Bayswater,BW02,Steam Sub Critical,420.42,8.81
+Bayswater,BW03,Steam Sub Critical,420.42,8.81
+Bayswater,BW04,Steam Sub Critical,420.42,8.81
+Callide B,CALL_B_1,Steam Sub Critical,222.95,8.52
+Callide B,CALL_B_2,Steam Sub Critical,222.95,8.52
+Callide C,CPP_3,Steam Super Critical,286.65,8.67
+Callide C,CPP_4,Steam Super Critical,286.65,8.67
+Eraring,ER01,Steam Sub Critical,458.64,8.91
+Eraring,ER02,Steam Sub Critical,458.64,8.91
+Eraring,ER03,Steam Sub Critical,458.64,8.91
+Eraring,ER04,Steam Sub Critical,458.64,8.91
+Gladstone,GSTONE1,Steam Sub Critical,178.36,8.84
+Gladstone,GSTONE2,Steam Sub Critical,178.36,8.84
+Gladstone,GSTONE3,Steam Sub Critical,178.36,8.84
+Gladstone,GSTONE4,Steam Sub Critical,178.36,8.84
+Gladstone,GSTONE5,Steam Sub Critical,178.36,8.84
+Gladstone,GSTONE6,Steam Sub Critical,178.36,8.84
+Kogan Creek,KPP_1,Steam Super Critical,473.93,8.16
+Millmerran,MPP_1,Steam Super Critical,271.36,8.57
+Millmerran,MPP_2,Steam Super Critical,271.36,8.57
+Mt Piper,MP1,Steam Sub Critical,420.42,8.62
+Mt Piper,MP2,Steam Sub Critical,420.42,8.62
+Stanwell,STAN-1,Steam Sub Critical,232.51,8.43
+Stanwell,STAN-2,Steam Sub Critical,232.51,8.43
+Stanwell,STAN-3,Steam Sub Critical,232.51,8.43
+Stanwell,STAN-4,Steam Sub Critical,232.51,8.43
+Tarong,TARONG#1,Steam Super Critical,222.95,8.57
+Tarong,TARONG#2,Steam Super Critical,222.95,8.57
+Tarong,TARONG#3,Steam Super Critical,222.95,8.57
+Tarong,TARONG#4,Steam Super Critical,222.95,8.57
+Tarong North,TNPS1,Steam Sub Critical,286.65,8.02
+Vales Point B,VP5,Steam Sub Critical,420.42,9.04
+Vales Point B,VP6,Steam Sub Critical,420.42,9.04
+Loy Yang A Power Station,LYA1,Steam Sub Critical,412.84,11.42
+Loy Yang A Power Station,LYA2,Steam Sub Critical,390.72,11.42
+Loy Yang A Power Station,LYA3,Steam Sub Critical,412.84,11.42
+Loy Yang A Power Station,LYA4,Steam Sub Critical,412.84,11.42
+Loy Yang B,LOYYB1,Steam Sub Critical,394.41,11.81
+Loy Yang B,LOYYB2,Steam Sub Critical,394.41,11.81
+Yallourn W,YWPS1,Steam Sub Critical,258.03,13.16
+Yallourn W,YWPS2,Steam Sub Critical,258.03,13.16
+Yallourn W,YWPS3,Steam Sub Critical,276.46,13.16
+Yallourn W,YWPS4,Steam Sub Critical,276.46,13.16
+Swanbank E GT,SWAN_E,CCGT,367.24,6.48
+Tallawarra,TALWA1,CCGT,419.70,6.04
+Yarwun Cogen,YARWUN_1,CCGT Cogen,171.69,9.42
+Condamine A,CPSA_GT1,CCGT - Gas Turbine,132.50,8.92
+Condamine A,CPSA_GT2,CCGT - Gas Turbine,132.50,8.92
+Condamine A,CPSA_ST,CCGT - Steam Turbine,0.00,13.04
+Darling Downs,DDPS1_GT1,CCGT - Gas Turbine,427.67,9.52
+Darling Downs,DDPS1_GT2,CCGT - Gas Turbine,427.67,9.52
+Darling Downs,DDPS1_GT3,CCGT - Gas Turbine,427.67,9.52
+Darling Downs,DDPS1_ST,CCGT - Steam Turbine,0.00,12.29
+Osborne,OsborneGT,CCGT - Gas Turbine,299.02,9.92
+Osborne,OsborneST,CCGT - Steam Turbine,0.00,16.85
+Pelican Point,PPCCGTGT1,CCGT - Gas Turbine,436.33,8.45
+Pelican Point,PPCCGTGT2,CCGT - Gas Turbine,436.33,8.45
+Pelican Point,PPCCGTST,CCGT - Steam Turbine,0.00,15.13
+Tamar Valley Combined Cycle,TVCC201_GT,CCGT - Gas Turbine,344.21,8.37
+Tamar Valley Combined Cycle,TVCC201_ST,CCGT - Steam Turbine,0.00,14.88
+Townsville Power Station,YABULU,CCGT - Gas Turbine,411.75,9.01
+Townsville Power Station,YABULU2,CCGT - Steam Turbine,0.00,15.20
+Newport,NPS,Gas-powered steam turbine,385.32,9.52
+Torrens Island B,TORRB1,Gas-powered steam turbine,154.13,9.94
+Torrens Island B,TORRB2,Gas-powered steam turbine,154.13,9.94
+Torrens Island B,TORRB3,Gas-powered steam turbine,154.13,9.94
+Torrens Island B,TORRB4,Gas-powered steam turbine,154.13,9.94
+Bairnsdale,BDL01,OCGT,127.83,7.78
+Bairnsdale,BDL02,OCGT,127.83,7.78
+Barcaldine Power Station,BARCALDN,OCGT,100.63,10.00
+Bell Bay Three,BBTHREE1,OCGT,108.79,9.32
+Bell Bay Three,BBTHREE2,OCGT,108.79,9.32
+Bell Bay Three,BBTHREE3,OCGT,108.79,9.32
+Braemar,BRAEMAR1,OCGT,456.92,9.16
+Braemar,BRAEMAR2,OCGT,456.92,9.16
+Braemar,BRAEMAR3,OCGT,456.92,9.16
+Braemar 2 Power Station,BRAEMAR5,OCGT,470.51,9.16
+Braemar 2 Power Station,BRAEMAR6,OCGT,470.51,9.16
+Braemar 2 Power Station,BRAEMAR7,OCGT,470.51,9.16
+Bolivar Power Station,BOLIVPS1_1,OCGT,83.77,7.47
+Bolivar Power Station,BOLIVPS1_2,OCGT,83.77,7.47
+Bolivar Power Station,BOLIVPS1_3,OCGT,83.77,7.47
+Bolivar Power Station,BOLIVPS1_4,OCGT,83.77,7.47
+Colongra,CG1,OCGT,492.27,8.43
+Colongra,CG2,OCGT,492.27,8.43
+Colongra,CG3,OCGT,492.27,8.43
+Colongra,CG4,OCGT,492.27,8.43
+Dry Creek GT,DRYCGT1,OCGT,141.43,10.97
+Dry Creek GT,DRYCGT2,OCGT,141.43,10.97
+Dry Creek GT,DRYCGT3,OCGT,141.43,10.97
+Hallett GT,AGLHAL01,OCGT,46.24,12.16
+Hallett GT,AGLHAL02,OCGT,46.24,12.16
+Hallett GT,AGLHAL03,OCGT,46.24,12.16
+Hallett GT,AGLHAL04,OCGT,46.24,12.16
+Hallett GT,AGLHAL05,OCGT,56.43,12.16
+Hallett GT,AGLHAL06,OCGT,56.43,12.16
+Hallett GT,AGLHAL07,OCGT,44.17,12.16
+Hallett GT,AGLHAL08,OCGT,44.17,12.16
+Hallett GT,AGLHAL09,OCGT,73.43,12.16
+Hallett GT,AGLHAL10,OCGT,69.63,12.16
+Hallett GT,AGLHAL11,OCGT,59.18,12.16
+Hallett GT,AGLHAL12,OCGT,48.96,12.16
+Hallett GT,AGLHALRE,OCGT,95.19,12.16
+Jeeralang A,JLA01,OCGT,144.15,12.53
+Jeeralang A,JLA02,OCGT,144.15,12.53
+Jeeralang A,JLA03,OCGT,144.15,12.53
+Jeeralang A,JLA04,OCGT,144.15,12.53
+Jeeralang B,JLB01,OCGT,206.70,12.53
+Jeeralang B,JLB02,OCGT,206.70,12.53
+Jeeralang B,JLB03,OCGT,206.70,12.53
+Ladbroke Grove,LADBROK1,OCGT,108.79,9.16
+Ladbroke Grove,LADBROK2,OCGT,108.79,9.16
+Laverton North,LNGS1,OCGT,424.28,8.78
+Laverton North,LNGS2,OCGT,424.28,8.78
+Mintaro GT,MINTARO,OCGT,244.78,10.00
+Mortlake,MORTLK11,OCGT,794.16,8.43
+Mortlake,MORTLK12,OCGT,794.16,8.43
+Mt Stuart,MSTUART1,OCGT,397.08,9.16
+Mt Stuart,MSTUART2,OCGT,397.08,9.16
+Mt Stuart,MSTUART3,OCGT,357.64,9.16
+Oakey Power Station,OAKEY1,OCGT,470.51,8.22
+Oakey Power Station,OAKEY2,OCGT,470.51,8.22
+Port Lincoln GT,POR01-1,OCGT,67.99,10.09
+Port Lincoln GT,POR01-2,OCGT,67.99,10.09
+Port Lincoln GT,POR01-3,OCGT,63.91,10.09
+Quarantine,QPS1,OCGT,78.87,7.99
+Quarantine,QPS2,OCGT,65.27,7.99
+Quarantine,QPS3,OCGT,65.27,7.99
+Quarantine,QPS4,OCGT,65.27,7.99
+Quarantine,QPS5,OCGT,348.13,7.99
+Roma,ROMA_7,OCGT,108.79,9.16
+Roma,ROMA_8,OCGT,108.79,9.16
+Smithfield Energy Facility,SITHE01,OCGT,108.11,10.97
+Smithfield Energy Facility,SITHE02,OCGT,113.53,10.97
+Smithfield Energy Facility,SITHE03,OCGT,113.53,10.97
+Smithfield Energy Facility,SITHE04,OCGT,167.99,10.97
+Snapper Point Power Station,SNAPPER1_1,OCGT,83.77,7.47
+Snapper Point Power Station,SNAPPER1_2,OCGT,83.77,7.47
+Snapper Point Power Station,SNAPPER1_3,OCGT,83.77,7.47
+Snapper Point Power Station,SNAPPER1_4,OCGT,83.77,7.47
+Snapper Point Power Station,SNAPPER1_5,OCGT,83.77,7.47
+Snuggery,SNUG1,OCGT,57.11,10.71
+Snuggery,SNUG2,OCGT,57.11,10.71
+Snuggery,SNUG3,OCGT,57.11,10.71
+Somerton,AGLSOM01,OCGT,115.59,12.16
+Somerton,AGLSOM02,OCGT,115.59,12.16
+Somerton,AGLSOM03,OCGT,115.59,12.16
+Somerton,AGLSOM04,OCGT,115.59,12.16
+Tamar Valley Peaking,TVPP104,OCGT,157.74,10.00
+Uranquinty,URANQ11,OCGT,451.48,8.43
+Uranquinty,URANQ12,OCGT,451.48,8.43
+Uranquinty,URANQ13,OCGT,451.48,8.43
+Uranquinty,URANQ14,OCGT,451.48,8.43
+Valley Power,VPGS1,OCGT,135.99,12.16
+Valley Power,VPGS2,OCGT,135.99,12.16
+Valley Power,VPGS3,OCGT,135.99,12.16
+Valley Power,VPGS4,OCGT,135.99,12.16
+Valley Power,VPGS5,OCGT,135.99,12.16
+Valley Power,VPGS6,OCGT,135.99,12.16
+Angaston,ANGAS1,Reciprocating Engine,0.00,12.78
+Angaston,ANGAS2,Reciprocating Engine,0.00,12.78
+Barker Inlet Power Station,BIPS1_01,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_02,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_03,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_04,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_05,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_06,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_07,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_08,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_09,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_10,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_11,Reciprocating Engine,0.00,7.89
+Barker Inlet Power Station,BIPS1_12,Reciprocating Engine,0.00,7.89
+Lonsdale,LONSDALE,Reciprocating Engine,0.00,7.89
+Port Stanvac 1,PTSTAN1_1,Reciprocating Engine,0.00,7.89
+Port Stanvac 1,PTSTAN1_2,Reciprocating Engine,0.00,7.89
+Tallawarra B,Tallawarra B,OCGT,870.31,8.21
+Kurri Kurri,Kurri Kurri 1,OCGT,1019.90,8.21
+Kurri Kurri,Kurri Kurri 2,OCGT,1019.90,8.21
+Kogan Gas,Kogan Gas,Hydrogen-based gas turbines,543.95,10.00
+SA Hydrogen Turbine,SA Hydrogen Turbine,Hydrogen-based gas turbines,543.95,10.00
+OCGT (small GT),,133.27,7.47
+OCGT (large GT),,720.73,8.21
+CCGT,,390.13,6.30
+CCGT with CCS,,390.13,8.01
+Biomass,,39.80,16.04
+Hydrogen reciprocating engines,,0.00,11.70
