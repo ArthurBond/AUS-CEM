@@ -1,0 +1,46 @@
+Connection Costs for Wind and Solar,,,,,,,
+REZ names,Region,REZ network voltage (kV),Connection capacity (MVA),Feeder length (km),Total cost ($M),$/kW,System Strength connection cost ($/kW)
+Far North Queensland,QLD,275.00,300.00,5.00,35.00,116.67,137.00 
+North Queensland Clean Energy Hub,QLD,275.00,300.00,10.00,48.00,160.00,137.00 
+Northern Queensland,QLD,275.00,300.00,5.00,35.00,116.67,137.00 
+Isaac,QLD,275.00,300.00,5.00,34.00,113.33,137.00 
+Barcaldine,QLD,275.00,300.00,10.00,45.00,150.00,
+Fitzroy,QLD,275.00,300.00,5.00,34.00,113.33,137.00 
+Wide Bay,QLD,275.00,300.00,5.00,34.00,113.33,
+Darling Downs,QLD,275.00,300.00,5.00,35.00,116.67,
+Banana,QLD,275.00,1800.00,100.00,414.00,230.00,137.00 
+North West New South Wales,NSW,330.00,400.00,10.00,54.00,135.00,
+New England,NSW,330.00,400.00,10.00,54.00,135.00,
+Central-West Orana,NSW,330.00,400.00,10.00,54.00,135.00,
+Broken Hill,NSW,220.00,250.00,10.00,44.00,176.00,
+South West New South Wales,NSW,330.00,400.00,10.00,54.00,135.00,
+Wagga Wagga,NSW,330.00,400.00,10.00,54.00,135.00,137.00 
+Tumut,NSW,330.00,400.00,5.00,40.00,100.00,
+Cooma-Monaro,NSW,330.00,400.00,5.00,40.00,100.00,
+Hunter-Central Coast,NSW,330.00,400.00,10.00,40.00,100.00,
+Hunter Coast,NSW,Note 1,,,,,
+Illawarra Coast,NSW,Note 1,,,,,
+Illawarra,NSW,330.00,400.00,5.00,40.00,100.00,
+Ovens Murray,VIC,220.00,250.00,5.00,34.00,136.00,
+Murray River,VIC,220.00,250.00,5.00,33.00,132.00,137.00 
+Western Victoria,VIC,220.00,250.00,5.00,35.00,140.00,137.00 
+South West Victoria,VIC,500.00,600.00,10.00,84.00,140.00,137.00 
+Gippsland,VIC,220.00,2000.00,16.00,684.00,340.00,
+Central North Victoria,VIC,220.00,250.00,10.00,46.00,184.00,137.00 
+Gippsland Coast,VIC,220.00,2000.00,16.00,684.00,340.00,137.00 
+Southern Ocean,VIC,Note 1,,,,,137.00 
+South East South Australia,SA,275.00,300.00,10.00,45.00,150.00,137.00 
+Riverland,SA,275.00,300.00,10.00,50.00,166.67,
+Mid-North South Australia,SA,275.00,300.00,5.00,36.00,120.00,137.00 
+Yorke Peninsula,SA,275.00,300.00,5.00,36.00,120.00,
+Northern South Australia,SA,275.00,300.00,5.00,34.00,113.34,137.00 
+Leigh Creek,SA,275.00,300.00,10.00,46.00,153.33,
+Roxby Downs,SA,275.00,300.00,10.00,44.00,146.67,137.00 
+Eastern Eyre Peninsula,SA,275.00,300.00,10.00,44.00,146.67,137.00 
+Western Eyre Peninsula,SA,275.00,300.00,10.00,44.00,146.67,
+South East South Australia Coast,SA,275.00,1200.00,50.00,894.00,745.00,137.00 
+North East Tasmania,TAS,220.00,150.00,5.00,41.00,273.33,137.00 
+North West Tasmania,TAS,220.00,150.00,5.00,36.00,240.00,137.00 
+Central Highlands,TAS,220.00,150.00,5.00,33.00,220.00,137.00 
+North Tasmania Coast,TAS,Note 1,,,,,137.00 
+North-East Tasmania Coast,TAS,Note 1,,,,,137.00 

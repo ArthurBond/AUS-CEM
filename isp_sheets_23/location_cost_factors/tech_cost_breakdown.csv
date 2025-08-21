@@ -1,0 +1,16 @@
+Technology,Equipment costs,Fuel connection costs,Cost of land and development,Installation costs
+OCGT (small GT),61%,5%,8%,26%
+OCGT (large GT),59%,9%,8%,25%
+CCGT,62%,3%,8%,27%
+CCGT with CCS,63%,2%,8%,27%
+Hydrogen reciprocating engines,55%,0%,8%,37%
+Biomass,55%,0%,8%,37%
+Battery storage (1hr storage),82%,0%,5%,13%
+Battery storage (2hrs storage),83%,0%,4%,13%
+Battery storage (4hrs storage),85%,0%,2%,13%
+Battery Storage (8hrs storage),85%,0%,1%,13%
+Large scale Solar PV,57%,0%,6%,38%
+Solar Thermal (15hrs Storage),74%,0%,1%,25%
+Wind,73%,0%,2%,24%
+Wind - Offshore (fixed),69%,0%,2%,29%
+Wind - offshore (floating),69%,0%,2%,29%

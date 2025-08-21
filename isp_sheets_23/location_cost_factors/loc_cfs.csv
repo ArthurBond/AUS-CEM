@@ -1,0 +1,16 @@
+Cost zones,Equipment costs,Fuel connection costs,Cost of land and development,Installation costs,O&M costs
+NSW Low,100%,100%,100%,100%,100%
+NSW Medium,105%,107%,79%,110%,108%
+NSW High,110%,116%,21%,120%,117%
+QLD Low,100%,100%,100%,100%,100%
+QLD Medium,105%,110%,49%,115%,112%
+QLD High,110%,121%,21%,131%,125%
+SA Low,100%,100%,100%,100%,100%
+SA Medium,105%,110%,33%,115%,112%
+SA High,110%,120%,17%,129%,124%
+TAS Low,100%,100%,100%,100%,100%
+TAS Medium,105%,107%,72%,110%,109%
+TAS High,110%,114%,64%,121%,117%
+VIC Low,100%,100%,100%,100%,100%
+VIC Medium,103%,103%,69%,103%,103%
+VIC High,105%,105%,36%,105%,105%
