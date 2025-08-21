@@ -1,0 +1,6 @@
+Region,CCGT,CCGT with CCS,OCGT (small GT),OCGT (large GT),Distributed Resources Solar,Distributed Resources Batteries,Biomass,Battery storage (1hr storage),Battery storage (2hrs storage),Battery storage (4hrs storage),Battery Storage (8hrs storage),Pumped Hydro (10hrs storage),Pumped Hydro (24hrs storage),Pumped Hydro (48hrs storage),Alkaline Electrolyser,BOTN - Cethana
+QLD,110.49,110.49,110.49,110.49,0.00,0.00,110.49,103.37,103.37,103.37,103.37,110.49,110.49,110.49,110.49,0.00
+NSW,85.54,85.54,85.54,85.54,0.00,0.00,85.54,77.52,77.52,77.52,77.52,85.54,85.54,85.54,85.54,0.00
+VIC,80.20,80.20,115.48,115.48,0.00,0.00,115.48,106.93,106.93,106.93,106.93,115.48,115.48,115.48,115.48,0.00
+SA,110.49,110.49,110.49,110.49,0.00,0.00,110.49,103.37,103.37,103.37,103.37,110.49,110.49,110.49,110.49,0.00
+TAS,115.48,115.48,115.48,115.48,0.00,0.00,115.48,106.93,106.93,106.93,106.93,115.48,115.48,115.48,115.48,0.00

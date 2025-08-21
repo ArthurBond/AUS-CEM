@@ -1,0 +1,41 @@
+REZ ID,REZ names,Region,REZ network voltage (kV),Connection capacity (MVA),Feeder length (km),Total cost ($M),$/kW
+N0,Non REZ NSW,NSW,500,600,20,177,295
+N1,North West NSW,NSW,330,400,10,72,180
+N2,New England,NSW,330,400,10,72,180
+N3,Central-West Orana,NSW,330,400,10,75,188
+N4,Broken Hill,NSW,220,250,10,56,224
+N5,South West NSW,NSW,330,400,10,75,188
+N6,Wagga Wagga,NSW,330,400,10,75,188
+N7,Tumut,NSW,330,400,5,58,145
+N8,Cooma-Monaro,NSW,330,400,5,58,145
+N9,Hunter-Central Coast,NSW,330,400,5,54,135
+N10,Hunter Coast,NSW,,,,,
+N11,Illawarra Coast,NSW,,,,,
+N12,Illawarra,NSW,330,400,5,55,138
+N13,South Cobar,NSW,330,400,10,69,173
+Q1,Far North QLD,QLD,275,300,5,52,173
+Q2,North Qld Clean Energy Hub,QLD,275,300,10,70,233
+Q3,Northern Qld,QLD,275,300,5,52,173
+Q4,Isaac,QLD,275,300,5,46,153
+Q5,Barcaldine,QLD,275,300,10,59,197
+Q6,Fitzroy,QLD,275,300,5,46,153
+Q7,Wide Bay,QLD,275,300,5,50,167
+Q8,Darling Downs,QLD,275,300,5,49,163
+Q9,Banana,QLD,275,1800,144,839,466
+Q10,Collinsville,QLD,275,300,5,46,153
+S1,South East SA,SA,275,300,10,74,247
+S2,Riverland,SA,275,300,10,74,247
+S3,Mid-North SA,SA,275,300,5,53,177
+S4,Yorke Peninsula,SA,275,300,5,48,160
+S5,Northern SA,SA,275,300,5,64,213
+S6,Roxby Downs,SA,275,300,10,61,203
+S7,Eastern Eyre Peninsula,SA,275,300,10,62,207
+S8,Western Eyre Peninsula,SA,275,300,10,62,207
+T1,North East Tasmania,TAS,220,150,5,50,333
+T2,North West Tasmania,TAS,220,150,5,50,333
+T3,Central Highlands,TAS,220,150,5,50,333
+T4,North Tasmania Coast,TAS,,,,,
+V0,Non REZ Victoria,VIC,500,600,20,205,342
+DN1,Dubbo,NSW,220,150,5,50,333
+DN2,Yass,NSW,220,150,5,50,333
+DN3,Marulan,NSW,220,150,5,50,333

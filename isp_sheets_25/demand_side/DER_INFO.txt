@@ -1,0 +1,3 @@
+The embedded_ess sheet contains the total capacity from aggregated and non-aggregated DER.
+
+We net off non-aggregated from the demand, and let aggregated energy storages participate as VPPs.
