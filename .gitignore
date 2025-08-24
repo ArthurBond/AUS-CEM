@@ -1,2 +1,7 @@
 Traces/*
-*.DS_Store
+.DS_Store
+**/.DS_Store
+.TODO
+**/.TODO
+.INFO
+**/.INFO
