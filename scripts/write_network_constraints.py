@@ -68,13 +68,6 @@ def add_flow_path_augmentation_constraints(n):
 
     # committed and anticipated network capability hard code but will need to add back in cost to get actual objecive value
 
-    
-
-
-
-    
-
-
 def add_REZ_augmentation_constraints(n):
 
     # Suppose options is a list of expansion options like ["NQ-CQ_aug1", "NQ-CQ_aug2"]
