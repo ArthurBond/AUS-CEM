@@ -7,4 +7,4 @@ Traces/*
 **/.INFO
 *.xlsx
 *.xls
-
+*.log
