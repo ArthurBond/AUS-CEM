@@ -5,3 +5,6 @@ Traces/*
 **/.TODO
 .INFO
 **/.INFO
+*.xlsx
+*.xls
+
