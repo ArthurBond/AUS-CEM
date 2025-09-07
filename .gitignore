@@ -1,4 +1,5 @@
-Traces/*
+Traces/*.csv
+Traces/**/*.csv
 .DS_Store
 **/.DS_Store
 .TODO
@@ -7,4 +8,7 @@ Traces/*
 **/.INFO
 *.xlsx
 *.xls
+*.xlsm
 *.log
+*.pdf
+scripts/draft.py
