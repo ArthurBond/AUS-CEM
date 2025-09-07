@@ -1,0 +1,48 @@
+
+Gurobi 12.0.3 (win64) logging started Sat Sep  6 18:21:58 2025
+
+Set parameter LogFile to value "../gurobi.log"
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (win64 - Windows 11.0 (26100.2))
+
+CPU model: AMD Ryzen 5 7500F 6-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+
+Academic license 2703021 - for non-commercial use only - registered to ar___@anu.edu.au
+Optimize a model with 104160 rows, 50496 columns and 159532 nonzeros
+Model fingerprint: 0xdde91408
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [9e+00, 5e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [7e-04, 7e+03]
+Presolve removed 101681 rows and 41561 columns
+Presolve time: 0.05s
+Presolved: 2479 rows, 8935 columns, 13891 nonzeros
+
+Concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 4.668e+03
+ Factor NZ  : 4.276e+04 (roughly 5 MB of memory)
+ Factor Ops : 9.971e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   1.31562997e+09 -3.51888826e+09  5.33e+03 4.55e-13  1.16e+06     0s
+   1   1.13955770e+08 -1.30095077e+09  2.31e+02 3.18e-12  1.10e+05     0s
+   2   5.76377673e+07 -1.92870517e+08  8.31e+00 2.73e-12  1.45e+04     0s
+
+Barrier performed 2 iterations in 0.09 seconds (0.08 work units)
+Barrier solve interrupted - model solved by another algorithm
+
+
+Solved with primal simplex
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    5323    2.2676912e+07   0.000000e+00   0.000000e+00      0s
+
+Solved in 5323 iterations and 0.11 seconds (0.13 work units)
+Optimal objective  2.267691239e+07

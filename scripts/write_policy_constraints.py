@@ -30,7 +30,7 @@ def add_82_pc_constraints(n,m,scenario="SC"):
         m.add_constraints()
 
     elif scenario=="PC":
-        
+        m.add_constraints()
 
     else:
         print("Only Progressive Change or Step Change")

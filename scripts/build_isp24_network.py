@@ -1,7 +1,7 @@
 # too difficult to do lead times I think (cost should be most of it)
 # how to do system strength cost ?
 
-# hydrogen out of scope
+# hydrogen out of scope - not built in SC and PC scenarios
 
 # add (initial) build limits (p_nom_extendable = True and p_nom_max = build limit for region)
 # these limits can be augmented with REZ augmentations
@@ -34,7 +34,7 @@ def create_snapshots(n = "network.nc", start = (2024,7,1), end = (2025,6,30),
     
     # Test on different 3 hourly intervals
     n.set_snapshots(pd.date_range(start=f"{start[0]}-{start[1]}-{start[2]} 00:00",
-                                  end=f"{end[0]}-{end[1]}-{end[2]} 23:30",freq='3h'))
+                                  end=f"{end[0]}-{end[1]}-{end[2]} 23:30",freq=interval))
     # n.set_snapshots(pd.date_range(start=f"{start[0]}-{start[1]}-{start[2]} 01:00",
     #                               end=f"{end[0]}-{end[1]}-{end[2]} 23:30",freq='3h'))
     # n.set_snapshots(pd.date_range(start=f"{start[0]}-{start[1]}-{start[2]} 02:00",
@@ -154,6 +154,50 @@ def _region_timeslice(region,timeslice):
 
     return day_types
 
+
+def _add_timeslice_costs(n, path = "./isp_sheets_23/"):
+    import pandas as pd
+
+def get_marginal_costs_for_years(years, cost_df, prefix="SP"):
+    """
+    years: list of years as integers, e.g. [2025, 2026, ..., 2035]
+    cost_df: DataFrame with columns like 'SP2029-30', 'SP2030-31', etc.
+    prefix: 'SP', 'ST', or 'W' for the season
+    Returns: list of marginal costs for each year in years
+    """
+    # Build the column names for each year
+    colnames = []
+    for y in years:
+        # e.g. 2030 -> 'SP2030-31'
+        next_year = str(y+1)[-2:]
+        col = f"{prefix}{y}-{next_year}"
+        colnames.append(col)
+    
+    # Find the last available column in the DataFrame
+    available_cols = [c for c in colnames if c in cost_df.columns]
+    if not available_cols:
+        raise ValueError("No matching columns found in cost_df")
+    last_col = available_cols[-1]
+    
+    # Fill missing years with the last available column
+    costs = []
+    for col in colnames:
+        if col in cost_df.columns:
+            costs.append(cost_df[col].values[0])  # or .iloc[0] if index is not default
+        else:
+            costs.append(cost_df[last_col].values[0])
+    return costs
+
+# # Example usage:
+# years = list(range(2029, 2035))
+# cost_df = pd.DataFrame({
+
+#     "SP2029-30": [5],
+#     "SP2030-31": [6],
+#     "SP2031-32": [7]
+# })
+# costs = get_marginal_costs_for_years(years, cost_df, prefix="SP")
+# print(costs)  # Output: [5, 6, 7, 7, 7, 7]  
 
 def add_existing_generators(n, path, scenario = "SC",interval_slicing=6):
     '''
@@ -741,6 +785,9 @@ def add_rez(n,path,scenario = "SC",interval_slicing=6):
 def add_new_entrants(n,path):
     "add options for new gas entrants"
 
+    # adjust by lead times, e.g. cannot build OCGT with lead time of 5 years before 2030 unless anticipated
+    # maybe ignore for now
+
     n.add("Generator",
           name = "NSW - New CCGT 0",
           capital_cost = build_cost_annuitised,
@@ -752,6 +799,8 @@ def add_new_entrants(n,path):
 if __name__=="__main__":
 
     data_path = "./isp_sheets_23/" # run from AUS-CEM directory
+
+    # apply a rolling horizon
 
     n = pypsa.Network()
 
@@ -770,6 +819,14 @@ if __name__=="__main__":
     add_carriers(n,fuels)
 
     print(n)
+
+    # model = network.optimize.create_model()
+    # network.optimize.solve_model(
+    #     solver_name="gurobi",
+    #     solver_options={"LogFile": "../gurobi.log"}
+    # )
+
+    # pypsa.optimization.OptimizationAccessor.optimize_with_rolling_horizon(snapshots=,horizon=,)
 
     # need to finish with n.optimize.create_model() before adding constraints
 

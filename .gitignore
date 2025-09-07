@@ -10,5 +10,6 @@ Traces/**/*.csv
 *.xls
 *.xlsm
 *.log
+**/*.log
 *.pdf
 scripts/draft.py

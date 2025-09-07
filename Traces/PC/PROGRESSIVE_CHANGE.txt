@@ -1,0 +1,14 @@
+Download traces from AEMO and paste the ones from Progressive Change scenario here.
+
+Download link (note only need to download ISP model once to get both Progressive and Step Change traces):
+
+https://www.aemo.com.au/-/media/files/major-publications/isp/2024/supporting-materials/2024-isp-model.zip?rev=3b35a0a57f564ec88098985782d2932c&sc_lang=en
+
+Required traces are:
+
+- ./demand/
+- ./hydro/
+
+DO NOT USE AEMO'S LOAD SUBTRACTOR!
+
+- ./load_subtractor/ is prepared already
