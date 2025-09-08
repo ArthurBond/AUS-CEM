@@ -1,3 +1,4 @@
 pandas
 pypsa
 matplotlib
+numpy

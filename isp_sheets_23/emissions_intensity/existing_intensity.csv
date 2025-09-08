@@ -1,0 +1,67 @@
+Generator,Technology,Intensity
+Bayswater,Steam Sub Critical,889.20
+Eraring,Steam Sub Critical,878.94
+Mt Piper,Steam Sub Critical,801.16
+Vales Point B,Steam Sub Critical,944.70
+Callide B,Steam Sub Critical,942.84
+Callide C,Steam Super Critical,873.95
+Gladstone,Steam Sub Critical,985.80
+Kogan Creek,Steam Super Critical,861.93
+Millmerran,Steam Super Critical,825.25
+Stanwell,Steam Sub Critical,863.46
+Tarong,Steam Sub Critical,886.60
+Tarong North,Steam Super Critical,886.60
+Loy Yang A Power Station,Steam Sub Critical,1168.86
+Loy Yang B,Steam Sub Critical,1111.15
+Yallourn W,Steam Sub Critical,1286.60
+Tallawarra,CCGT,370.97
+Condamine A,CCGT,448.78
+Darling Downs,CCGT,420.67
+Swanbank E GT,CCGT,393.98
+Townsville Power Station,CCGT,571.81
+Yarwun Cogen,CCGT,458.81
+Osborne,CCGT,414.67
+Pelican Point,CCGT,400.25
+Tamar Valley Combined Cycle,CCGT,618.77
+Colongra,OCGT,625.45
+Smithfield Energy Facility,OCGT,704.97
+Uranquinty,OCGT,564.22
+Barcaldine Power Station,OCGT,793.26
+Braemar,OCGT,616.53
+Braemar 2 Power Station,OCGT,616.53
+Mt Stuart,OCGT,1001.63
+Oakey Power Station,OCGT,663.68
+Roma,OCGT,649.90
+Dry Creek GT,OCGT,892.19
+Hallett GT,OCGT,642.66
+Ladbroke Grove,OCGT,516.24
+Mintaro GT,OCGT,693.54
+Port Lincoln GT,OCGT,1334.59
+Quarantine,OCGT,603.98
+Snapper Point Power Station,OCGT,541.60
+Snuggery,OCGT,1106.88
+Bell Bay Three,OCGT,618.77
+Tamar Valley Peaking,OCGT,618.77
+Bairnsdale,OCGT,537.05
+Jeeralang A,OCGT,757.96
+Jeeralang B,OCGT,757.96
+Laverton North,OCGT,638.18
+Mortlake,OCGT,467.11
+Somerton,OCGT,732.59
+Valley Power,OCGT,805.78
+Torrens Island B,Gas-powered steam turbine,593.04
+Newport,Gas-powered steam turbine,532.54
+Angaston,Reciprocating Engine,685.76
+Barker Inlet Power Station,Reciprocating Engine,567.51
+Lonsdale,Reciprocating Engine,657.98
+Port Stanvac 1,Reciprocating Engine,657.98
+Kurri Kurri OCGT,OCGT,580.98
+Tallawarra B,OCGT,580.98
+Bolivar Power Station,OCGT,541.60
+Kogan Gas,Hydrogen-based gas turbines,580.98
+SA Hydrogen Turbine,Hydrogen-based gas turbines,580.98
+All Pumped Hydro,Pumped Hydro,0.00
+All Large scale solar PV,Large scale solar PV,0.00
+All Wind,Wind,0.00
+All Hydro,Hydro,0.00
+All Battery Storage,Battery Storage,0.00

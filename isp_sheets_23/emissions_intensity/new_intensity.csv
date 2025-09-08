@@ -1,0 +1,20 @@
+Generator,Intensity
+OCGT (small GT),541.60
+OCGT (large GT),580.98
+CCGT,377.67
+CCGT with CCS,57.45
+Biomass,20.84
+Large scale Solar PV,0.00
+Solar Thermal (15hrs storage),0.00
+Battery Storage (1hr storage),0.00
+Battery storage (2hrs storage),0.00
+Battery storage (4hrs storage),0.00
+Battery storage (8hrs storage),0.00
+Wind,0.00
+Wind - offshore (fixed),0.00
+Wind - offshore (floating),0.00
+Pumped Hydro (8hrs storage),0.00
+Pumped Hydro (24hrs storage),0.00
+Pumped Hydro (48hrs storage),0.00
+BOTN - Cethana,0.00
+Hydrogen reciprocating engines,0.00

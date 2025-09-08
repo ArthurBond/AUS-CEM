@@ -9,6 +9,8 @@ import pypsa
 # Therefore, we introduce a column nom_min_{carrier} and nom_max_{carrier} in the buses dataframe. 
 # These are then used as lower and upper bounds of generators of the same carrier at the same bus
 
+# use cap factors to do installed capacity coefficients
+
 def add_82_pc_constraints(n,m,scenario="SC"):
     '''
     ensure 82 % is met by 2030

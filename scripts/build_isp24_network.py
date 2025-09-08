@@ -24,17 +24,29 @@ import glob
 
 # Snapshots
 
-def create_snapshots(n = "network.nc", start = (2024,7,1), end = (2025,6,30), 
-                     interval = '3h'):
-    # class 
-
+def create_snapshots(n = "network.nc", start = (2024,7,1), end = (2032,6,30), interval = '3h'):
     # Test on first month
     # n.set_snapshots(pd.date_range(start=f"{start[0]}-{start[1]}-{start[2]} 00:00",
     #                               end=f"{end[0]}-{end[1]}-{end[2]} 23:30",freq='30min'))
     
+    years = list(range(start[0],end[0]))
+    snapshots = pd.DatetimeIndex([])
+    period = pd.date_range(
+        start=f"{start[0]}-{start[1]}-{start[2]} 00:00",
+        end=f"{end[0]}-{end[1]}-{end[2]} 23:30",
+        freq=interval
+    )
+    snapshots = snapshots.append(period)
+
+    # convert to multiindex and assign to network
+    n.set_snapshots(pd.MultiIndex.from_arrays([snapshots.year, snapshots]))
+    n.investment_periods = years
+
+    print("Added Snapshots!")
+
     # Test on different 3 hourly intervals
-    n.set_snapshots(pd.date_range(start=f"{start[0]}-{start[1]}-{start[2]} 00:00",
-                                  end=f"{end[0]}-{end[1]}-{end[2]} 23:30",freq=interval))
+    # n.set_snapshots(pd.date_range(start=f"{start[0]}-{start[1]}-{start[2]} 00:00",
+    #                               end=f"{end[0]}-{end[1]}-{end[2]} 23:30",freq=interval))
     # n.set_snapshots(pd.date_range(start=f"{start[0]}-{start[1]}-{start[2]} 01:00",
     #                               end=f"{end[0]}-{end[1]}-{end[2]} 23:30",freq='3h'))
     # n.set_snapshots(pd.date_range(start=f"{start[0]}-{start[1]}-{start[2]} 02:00",
@@ -42,7 +54,7 @@ def create_snapshots(n = "network.nc", start = (2024,7,1), end = (2025,6,30),
 
 # Carriers
 
-def add_carriers(n = "network.nc", fuels=['Coal','Renewables']):
+def add_carriers(n = "network.nc", fuels=['Fossil Fuel','Renewables']):
 
     for fuel in fuels:
         n.add('Carrier',name=fuel)
@@ -52,20 +64,23 @@ def add_carriers(n = "network.nc", fuels=['Coal','Renewables']):
 
 # Links
 
+from pypsa.optimization.compat import define_constraints, get_var, join_exprs, linexpr
+
 def add_links(n = "network.nc", path = "./isp_sheets_23/",
-              fn = "network_capability/flow_path_capability.csv",
-              timeslices = "Traces/SC/timeslice_RefYear4006.csv"):
+              fn = "network_capability/flow_path_capability.csv"):
+            #   timeslices = "Traces/SC/timeslice_RefYear4006.csv"):
 
     linkdf = pd.read_csv(path + fn)
 
     for _,row in linkdf.iterrows():
         n.add("Link",row['Plain Name'],
-            bus0 = row['Bus0'],
-            bus1 = row['Bus1'],
-            type = 'AC',
-            carrier='AC',
-            p_nom = row['Max forward'], # use this as an estimate
-            p_min_pu = -row['Max reverse']/row['Max forward'])
+                bus0 = row['Bus0'],
+                bus1 = row['Bus1'],
+                type = 'AC',
+                carrier='AC',
+                p_nom_extendable=True) # define upper and lower later
+            # p_nom = row['Max forward'], # use this as an estimate
+            # p_min_pu = -row['Max reverse']/row['Max forward'])
 
     n.links.loc['NNSW-SQ Terranora','type'] = "DC"
     n.links.loc['VIC-CSA Murraylink','type'] = "DC"
@@ -154,17 +169,54 @@ def _region_timeslice(region,timeslice):
 
     return day_types
 
+def _get_seasonal_columns_from_timeslice(snapshots,regions,timeslice):
 
-def _add_timeslice_costs(n, path = "./isp_sheets_23/"):
-    import pandas as pd
+    regions,tdict = _get_timeslices()
 
-def get_marginal_costs_for_years(years, cost_df, prefix="SP"):
+    seasonal_cols = {}
+
+    for region in regions:
+
+        temp_ts = _region_timeslice(region,tdict)
+            
+        region_map = temp_ts.DAY_TYPE_SHORT.to_dict()
+
+        snapshots_day = snapshots.strftime("%Y-%m-%d")
+
+        snapshots_day_dt = pd.to_datetime(snapshots_day)
+        day_types = snapshots_day_dt.map(lambda d: region_map.get(d, None))
+        years = snapshots_day_dt.year
+        fin_years = years.where(snapshots_day_dt.month < 7, years + 1)
+
+        cap_cols = []
+
+        for (dt, fy), y in zip(zip(day_types, fin_years),years):
+            if dt == 'W':
+                if y <= 2032:
+                    cap_cols.append(f"{dt}{y}")
+                else:
+                    cap_cols.append(f"{dt}2032")
+            else:
+                if fy <= 2033:
+                    cap_cols.append(f"{dt}{fy-1}-{str(fy)[-2:]}")
+                else:
+                    cap_cols.append(f"{dt}2032-33")
+
+        seasonal_cols[region] = cap_cols
+
+    return seasonal_cols
+
+# don't worry about this since this is for ST not LT
+def _get_marginal_costs_for_years(years, cost_df, prefix="SP"):
     """
     years: list of years as integers, e.g. [2025, 2026, ..., 2035]
     cost_df: DataFrame with columns like 'SP2029-30', 'SP2030-31', etc.
     prefix: 'SP', 'ST', or 'W' for the season
     Returns: list of marginal costs for each year in years
     """
+    # can be an extension --- use affine heat rates to obtain marginal cost $/MWh from
+    # fuel price summary $/GJ * GJ/MWh (heat rate)
+
     # Build the column names for each year
     colnames = []
     for y in years:
@@ -199,6 +251,7 @@ def get_marginal_costs_for_years(years, cost_df, prefix="SP"):
 # costs = get_marginal_costs_for_years(years, cost_df, prefix="SP")
 # print(costs)  # Output: [5, 6, 7, 7, 7, 7]  
 
+# in capital cost, add the fixed o&m annuitised but ignore v o&m
 def add_existing_generators(n, path, scenario = "SC",interval_slicing=6):
     '''
     Add existing generators and storage units to the network.
@@ -215,8 +268,10 @@ def add_existing_generators(n, path, scenario = "SC",interval_slicing=6):
     Note: Hydro inflows are done in GWh by AEMO but PyPSA does it in MW.
     '''
         
-    solarPath = f"./Traces/{scenario}/solar/"
-    windPath = f"./Traces/{scenario}/wind/"
+    # solarPath = f"./Traces/{scenario}/solar/"
+    # windPath = f"./Traces/{scenario}/wind/"
+    solarPath = f"./Traces/solar/"
+    windPath = f"./Traces/wind/"
     solarTraces = os.listdir(solarPath)
     windTraces = os.listdir(windPath)
     # solarTraceNames = [s.split("_")[0] for s in solarTraces if s[:3]!="REZ"]
@@ -232,12 +287,9 @@ def add_existing_generators(n, path, scenario = "SC",interval_slicing=6):
     existing_summary  = pd.read_csv(path + "generation_summary/existing_gen_summary.csv",index_col=0)
     existing_units  = pd.read_csv(path + "seasonal_ratings/existing_gen_seasonal_ratings.csv")
 
-    # for fuel in existing_map['Fuel type'].unique():
-    #     n.add('Carrier',name=fuel)
-
     # add gens
     # consider adding project status as part of carrier info
-    year = 2025 # financial
+    # year = 2025 # financial
     for idx,row in existing_gens.iterrows():
         genName = row['Generator']
         fuel = existing_map.loc[genName,"Fuel type"]
@@ -252,9 +304,10 @@ def add_existing_generators(n, path, scenario = "SC",interval_slicing=6):
 
         for unit,urow in units.iterrows():
             unitName = urow['DUID']
-            summerTypical = urow[f'ST{year-1}-{str(year)[2:]}']
-
+            # summerTypical = urow[f'ST{year-1}-{str(year)[2:]}']
             # summerPeak = urow[f'SP{year-1}-{str(year)[2:]}']
+
+
 
             if fuel == 'Wind':
                 df = pd.read_csv(windPath+_get_trace_fn(traceMap[genName],windTraces))

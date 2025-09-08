@@ -5,15 +5,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # --- basic parameters ---
-n_units = 100
+n_units = 200
 units = [f"Coal{n+1}" for n in range(n_units)]
-year = 2025
-outage_fraction = 0.06               # 5% of the year per unit
-max_out_fraction = 0.10              # no more than 20% out at once
+# year = 2025
+outage_fraction = 0.0548               # 5% of the year per unit
+max_out_fraction = 0.10              # no more than 10% out at once
 hours_per_year = 8760 // 3           # 3h intervals
 
 # --- build hourly index ---
-index = pd.date_range(f"{year}-01-01 00:00", f"{year}-12-31 21:00", freq="3h")
+index = pd.date_range(f"2024-07-01 00:00", f"2032-06-30 23:30", freq="3h")
 
 # --- initialize availability dataframe ---
 df = pd.DataFrame(1, index=index, columns=units)  # 1 = online
@@ -40,8 +40,10 @@ for unit in units:
     if not placed:
         print(f"Warning: Could not place outage for {unit} without exceeding max_out constraint.")
 
+# use mask on hydro for outages that aren't 5.48% 
+
 # --- write to CSV for PyPSA ---
-df.to_csv("coal_availability.csv")
+df.to_csv("./isp_sheets_23/outages/5_48pc_outages.csv",index=False)
 print("Availability CSV written with 1 = online, 0 = offline")
 
 # --- plot a sample of units ---
@@ -55,8 +57,11 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 
+# plt.savefig("../random_outages_2025_sample.png",dpi=200)
+
+
 # --- plot total online units over time ---
-plt.figure(figsize=(15, 3))
+plt.figure(figsize=(15, 6))
 plt.plot(df.index, df.sum(axis=1), label="Online units", color="black")
 plt.axhline(n_units - max_out, color="red", linestyle="--", label=r"Min online (max 10% out)")
 plt.ylabel("Number of online units")
@@ -65,3 +70,5 @@ plt.title("Total Online Coal Units Over Time")
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+# plt.savefig("../random_outages_2025.png",dpi=200)
