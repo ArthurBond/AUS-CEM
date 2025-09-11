@@ -1,0 +1,111 @@
+REZ / Constraint ID,REZ Name,Option,Additional network capacity (MW),With pre-req,Expected cost ($ million),Cost estimate source,Cost estimate class,$M/MW,Easement Length (km),Lead time,System strength connection costs ($M/MW)
+Q1,Far North QLD,Option 1,1290,,1836,AEMO TCD,Class 5b,1.42,275,Long,Included as connection cost
+Q1,Far North QLD,Option 2,1290,,2780,AEMO TCD,Class 5b,2.16,535,Long,
+Q2,North Qld Clean Energy Hub,CopperString,1500,2300,"This project is considered to be anticipated and so is not included as an option here. 
+The scope of the project is listed here for context only.  ",,,,,,
+,,Option 1,500,,651,AEMO TCD,Class 5b,0.43,190,Medium,Included as connection cost
+,,Option 2,1000,,0,AEMO TCD,Class 5b,0.00,N/A,Medium,
+Q3,Northern Qld,See NQ-CQ subregional augmentations,,,,,,,,,Included as connection cost
+Q4,Isaac,See NQ2 group constraint augmentations,,,,,,,,,Included as connection cost
+Q5,Barcaldine,Option 1,500,,1068,AEMO TCD,Class 5b,0.79,340,Long,0.137
+Q5,Barcaldine,Option 2,850,,0,AEMO TCD,Class 5b,0.00,N/A,Medium,
+Q6,Fitzroy,See CQ-GG subregional augmentations,,,,,,,,,
+Q7,Wide Bay,See SQ1 group constraint augmentations,,,,,,,,,
+Q8,Darling Downs,See SWQLD1 Transmission Limit constraint augmentations,,,,,,,,,
+Q9,Banana,Option 1,3000,,1078,AEMO TCD,Class 5b,0.36,200,Long,Included as connection cost
+Q9,Banana,Option 2,1800,,414,AEMO TCD,Class 5b,0.23,100,Medium,
+Q9,Banana,Option 3,1000,,663,AEMO TCD,Class 5b,0.66,195,Medium,
+NQ2,"Group constraint  - 
+Facilitating power to Central Queensland",Option 1,400,,173,AEMO TCD,Class 5b,0.43,18,Medium,Included in individual REZ expansion cost
+NQ2,"Group constraint  - 
+Facilitating power to Central Queensland",Option 2,1400,,1008,AEMO TCD,Class 5b,0.72,295,Medium,
+SQ1,Group Constraint - Wide Bay ,Option 1,1100,,536,AEMO TCD,Class 5b,0.49,N/A,Long,0.137
+SQ1,Group Constraint - Wide Bay ,Option 2,1100,,583,AEMO TCD,Class 5b,0.53,N/A,Long,
+SQ1,Group Constraint - Wide Bay ,Option 3,1700,,110,AEMO TCD,Class 5b,0.06,N/A,Long,
+SWQLD1,Transmission Limit Constraint - Darling Downs,Option 1,500,,28,Powerlink,Class 5,0.06,N/A,Short,0.137
+SWQLD1,Transmission Limit Constraint - Darling Downs,Option 2,330,,To be provided by interested parties,,,,,,
+SWQLD1,Transmission Limit Constraint - Darling Downs,Option 3,1500,,184,AEMO TCD,Class 5b,0.12,N/A,Long,
+N1,North West NSW ,Option 1,1660,,4684,AEMO TCD,Class 5b,2.82,810,Long,0.137
+N2,New England,Option 1,1000,,370,AEMO TCD,Class 5b,0.37,60,Medium,0.137
+N2,New England,Option 2,1500,,1004,AEMO TCD,Class 5b,0.67,140,Long,
+N2,New England,Option 3,900,,647,AEMO TCD,Class 5b,0.72,20,Medium,
+N3,Central-West Orana,Central West Orana REZ transmission link,3000,,"This project is considered to be anticipated and so is not included as an option here. 
+The scope of the project is listed here for context so that the subsequent options can be understood. Option 1 includes expansions and augmentations to this project. ",,,,,,Included as part of network build
+N3,Central-West Orana,Option 1,3000,,243,AEMO TCD,Class 5b,0.08,N/A,Medium,
+N3,Central-West Orana,Option 2,500,,330,AEMO TCD,Class 5b,0.66,55,Medium,
+N3,Central-West Orana,Option 3,500,,273,AEMO TCD,Class 5b,0.55,45,Medium,
+N4,Broken Hill,Option 1,1750,,5098,AEMO TCD,Class 5b,2.91,849,Long,0.137
+N4,Broken Hill,Option 2,1750,,4576,AEMO TCD,Class 5b,2.61,850,Long,
+N5,South West NSW,Option 1,2500,,1418,AEMO TCD,Class 5b,0.57,0,Long,0.137
+N5,South West NSW,Option 2,800,,383,AEMO TCD,Class 5b,0.48,69,Long,
+N5,South West NSW,Option 3,1400,,300,AEMO TCD,Class 5b,0.21,50,Long,
+N5,South West NSW,Option 4,1400,,417,AEMO TCD,Class 5b,0.30,88,Long,
+N5,South West NSW,Option 5,1400,,1047,AEMO TCD,Class 5b,0.75,280,Long,
+SWNSW1,Secondary Transmission Limit - South West NSW,Option 1,600,,167,Transgrid,Class 5a,0.28,90,Short,
+N6,Wagga Wagga,Option 1,,,,,,,,,0.137
+N7,Tumut,Option 1,,,,,,,,,Included as connection cost
+N8,Cooma-Monaro,Option 1,150,,202,AEMO TCD,Class 5b,1.35,81,Medium,0.137
+N8,Cooma-Monaro,Option 2,500,,512,AEMO TCD,Class 5b,1.02,126,Medium,
+N9,Hunter-Central Coast,Option 1,950,,307,AEMO TCD,Class 5b,0.32,39,Medium,0.137
+N9,Hunter-Central Coast,Option 1A,950,,283,AEMO TCD,Class 5b,0.30,57,Medium,
+N9,Hunter-Central Coast,Option 1AB,850,,274,AEMO TCD,Class 5b,0.32,57,Medium,
+N9,Hunter-Central Coast,Option 1B,850,,298,AEMO TCD,Class 5b,0.35,39,Medium,
+N9,Hunter-Central Coast,Option 2,500,,59,AEMO TCD,Class 5b,0.12,N/A,Short,
+N9,Hunter-Central Coast,Option 2A,375,,106,AEMO TCD,Class 5b,0.28,N/A,Medium,
+N10,Hunter Coast,Option 1,,,,,,,,,0.137
+N11,Illawarra Coast,Option 1,2000,,814,AEMO TCD,Class 5b,0.41,100,Long,0.137
+N12,Illawarra,Option 1,2000,,814,AEMO TCD,Class 5b,0.41,100,Long,0.137
+S1,South East SA,See S1-TBMO transmission limit constraint augmentation and VIC-SESA and SESA-SA sub-regional augmentations,,,,,,,,,
+S2,Riverland,Option 1,700,,100,AEMO TCD,Class 5a,0.14,N/A,Short,0.137
+S3,Mid-North SA,See MN1 group constraint augmentations,,,,,,,,,
+S4,Yorke Peninsula,Option 1,450,,566,AEMO TCD,Class 5b,1.26,162,Medium,0.137
+S4,Yorke Peninsula,Option 2,450,,156,AEMO TCD,Class 5b,0.35,185,Long,
+S5,Northern SA,See NSA1 group constraint augmentations,,,,,,,,,
+S6,Leigh Creek,Option 1,950,,838,AEMO TCD,Class 5b,0.88,235,Short,0.137
+S7,Roxby Downs,Option 1,950,,541,AEMO TCD,Class 5b,0.57,139,Short,Included as connection cost
+S8,Eastern Eyre Peninsula,Option 1,300,,100,ElectraNet,Class 5a,0.33,N/A,Short,Included as connection cost
+S9,Western Eyre Peninsula,Option 1,950,,862,AEMO TCD,Class 5b,0.91,254,Long,0.137
+S9,Western Eyre Peninsula,Option 2,500,,424,AEMO TCD,Class 5b,0.85,144,Long,
+S9,Western Eyre Peninsula,Option 3,1000,,1058,AEMO TCD,Class 5b,1.06,398,Long,
+S10,South East SA Coast,See VIC-SESA and SESA-SA sub-regional augmentations,,,,,,,,,Included as connection cost
+MN1,Group Constraint - facilitating power out of mid-north SA,S3 Option 1,900,,416,ElectraNet,Class 5b,0.46,136,Short,Included as connection cost
+MN1,Group Constraint - facilitating power out of mid-north SA,S3 Option 2,1150,,740,AEMO TCD,Class 5b,0.64,150,Short,
+MN1,Group Constraint - facilitating power out of mid-north SA,S3 Option 3,800,,1434,AEMO TCD,Class 5b,1.79,430,Short,
+MN1,Group Constraint - facilitating power out of mid-north SA,S3 Option 4,1000,,1434,AEMO TCD,Class 5b,1.43,390,Short,
+NSA1,Group Constraint - facilitating power out of north SA,Option 1,1200,,268,AEMO TCD,Class 5b,0.22,62,Short,Included as connection cost
+NSA1,Group Constraint - facilitating power out of north SA,Option 2,300,,100,ElectraNet,Class 5a,0.33,N/A,Short,
+S1-TBMO,Transmission Limit Constraint - ,Option 1,120,,34,ElectraNet,Class 5b,0.28,N/A,Short,Included as connection cost
+T1,North East Tasmania,Option 1,800,,400,AEMO TCD,Class 5b,0.50,85,Medium,Included as connection cost
+,,,800,,269,AEMO TCD,Class 5b,0.34,80,Long,
+T2,North West Tasmania,Option 1,800,,"28 (with Marinus Link) 
+304 (without Marinus Link)",AEMO TCD,Class 5a,0.38,"N/A (with Marinus Link)
+59 (without Marinus Link)",Short,Included as connection cost
+T2,North West Tasmania,Option 2,500,,258,AEMO TCD,Class 5a,0.52,65,Long,
+T2,North West Tasmania,Option 3,800,,534,AEMO TCD,Class 5a,0.67,132,Medium,
+T3,Central Highlands,Option 1,690,,"201 (with Marinus Link)
+434 (without Marinus Link)",AEMO TCD,Class 5a,0.63,"0 (with Marinus Link)
+0 (without Marinus Link)",Short,Included as connection cost
+T3,Central Highlands,Option 2,675,,274,AEMO TCD,Class 5a,0.41,79,Long,
+T4,North West Tasmania Coast,Option 1,1360,,206,AEMO TCD,Class 5a,0.15,53,Long,Included as connection cost
+T5/NET1,North East Tasmania Coast,Option 1,900,,307,AEMO TCD,Class 5a,0.34,68,Long,Included as connection cost
+V2,Murray River,Option 1,800,,912,AEMO TCD,Class 5b,1.14,275,Long,Included as connection cost
+V3,Western Victoria,See V3-EAST secondary transmission limit constraint augmentations,,,,,,,,,
+V4,South West Victoria,See SWV1 group constraint augmentations,,,,,,,,,
+V5,Gippsland,See SEVIC1 transmission limit constraint augmentations,,,,,,,,,
+V6,Central North Vic,Option 1,250,,709,AEMO TCD,Class 5b,2.84,175,Long,Included as connection cost
+V6,Central North Vic,Option 2,500,,1110,AEMO TCD,Class 5b,2.22,290,Long,
+V6,Central North Vic,Option 3,1500,,1077,AEMO TCD,Class 5b,0.72,160,Long,
+V7,Gippsland Coast,Option 1,2000,,684,AEMO TCD,Class 5b,0.34,16,Long,Included as connection cost
+V7,Gippsland Coast,Option 2,6000,,684,AEMO TCD,Class 5b,0.11,16,Long,
+V8,Portland Coast,See SWV1 group constraint augmentations,,,,,,,,,
+SWV1,Group Constraint - South West Victoria,Option 1,,,64,AEMO Victorian Planning,Class 5a,,0,Long,Included as connection cost
+SWV1,Group Constraint - South West Victoria,Option 1A,1500,,725,AEMO Victorian Planning,Class 5a,0.53,170,Long,
+SWV1,Group Constraint - South West Victoria,Option 1B,1750,,1013,AEMO Victorian Planning,Class 5a,0.58,64,Long,
+SWV1,Group Constraint - South West Victoria,Option 1C,1750,,1372,AEMO Victorian Planning,Class 5a,0.78,96,Long,
+SWV2,Group Constraint - South West Victoria,Option 2A,1950,,618,AEMO Victorian Planning,Class 5a,0.35,147,Long,
+SWV3,Group Constraint - South West Victoria,Option 2B,2900,,803,AEMO Victorian Planning,Class 5a,0.30,147,Long,
+SWV4,Group Constraint - South West Victoria,Option 3A,1800,,1076,AEMO Victorian Planning,Class 5a,0.63,271,Long,
+SWV5,Group Constraint - South West Victoria,Option 3B,2800,,1325,AEMO Victorian Planning,Class 5a,0.50,271,Long,
+SEVIC1,Transmission Limit Constraint - Gippsland,Option 1,1500,,254,AEMO TCD,Class 5b,0.17,14,Medium,Included as connection cost
+SEVIC1,Transmission Limit Constraint - Gippsland,Option 2,1700,,947,AEMO TCD,Class 5b,0.56,0,Long,
+V3-East,Secondary Transmission Limit - Western Victoria,Option 1,600,,163,AEMO TCD,Class 5b,0.27,43,Medium,Included as connection cost

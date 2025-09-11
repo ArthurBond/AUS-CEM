@@ -1,20 +1,110 @@
 from linopy import Variable
+from collections import defaultdict as dd
+import pandas as pd
 
-def add_flow_path_augmentation_constraints(n, years, augmentations):
+# do flow paths
+
+# add rez augs 
+
+# add gens in later using geocoding
+
+def add_rez_variables():
+
+    return rez_vars_dict
+
+def add_flow_path_augmentation_constraints(n, years, fpMap, fpCost):
     """
     n: PyPSA network with a linopy model
     years: list of years (e.g., [2025, 2030, 2035])
     augmentations: dict, e.g. {"aug1": {"cost": 100, "capacity": 200}, ...}
     """
-    # Binary variable: x[aug, year] == 1 if augmentation aug is chosen in year or earlier
-    x = n.model.add_variables(
-        coords={"aug": list(augmentations.keys()), "year": years},
-        binary=True,
-        name="augment_option"
-    )
 
     link = "NQ-CQ"
-    link_flow = n.model["Link-p"].loc[:, link]
+
+    aug_dict = dd(dict)
+
+    # for link in n.links.index.to_list():
+
+
+    mapDF  = pd.read_csv("flow_rez_map.csv")
+
+    costDF = pd.read_csv("flow_rez_map.csv",index_col=(0,1))
+
+    linkDF = pd.read_csv("flow_path_capability.csv",index_col=1)
+
+    for _,row in mapDF.iterrows():
+        
+        link = row["Link Name"]
+
+        aug_name = row["Option Name"]
+
+        forward_increase = row["Forward increase"]
+
+        reverse_increase = row["Reverse increase"]
+
+        lead_time = row["Lead time or Earliest in Service Date"]
+
+        rez_name = row["REZ Name"]
+
+        rez_increase = row["Additional REZ hosting capacity provided"]
+
+        # if link == "CNSW­–SNW North AND South":
+
+        # if link == "SNSW–CNSW Humelink":
+        
+        # if link == "CNSW­–SNW North AND South":
+
+
+        # ELSE
+
+        for year in years:
+            aug_dict
+
+        
+        start_year = 2028
+        # if lead_time in ("Short","Medium","Long"):
+
+        #     if lead_time == "Short":
+        #         start_year=2028
+        if lead_time == "Medium":
+            start_year=2029
+        if lead_time == "Long":
+            start_year=2031
+
+        link_info = linkDF.loc[link]
+
+        flow_upper_initial = link_info["Max forward"]
+        flow_lower_initial = link_info["Max reverse"]
+        
+        for year in range(start_year,2055):
+
+            aug_option = n.model.add_variables(
+                    binary=True,
+                    name=f"{aug_name}_{year}"
+                )
+
+            link_flow = n.model.variables["Link-p"].loc[(year,):, link]
+
+            n.model.add_constraint( link_flow <= flow_upper_initial + aug_option*forward_increase,
+                                   name=f"{aug_option}_{year}_upper")
+            
+            n.model.add_constraint(-link_flow <= flow_lower_initial + aug_option*reverse_increase,
+                                   name=f"{aug_option}_{year}_lower")
+            
+            n.model.objective += aug_option*costDF.loc[(link,aug_option),year]
+
+        if rez_name:
+
+            n.model.add_constraint( link_flow <= flow_upper_initial + aug_option*forward_increase,
+                                   name=f"{aug_option}_{year}_upper")
+
+
+            
+        
+
+
+
+
 
     # don't know if I need the below
 
@@ -69,6 +159,8 @@ def add_flow_path_augmentation_constraints(n, years, augmentations):
             n.model.add_constraints(
                 x.loc["aug2", year] <= x.loc["aug1", year]
             )
+
+    # relax constraints if needed for group REZ hosting caps
 
 def add_flow_path_augmentation_constraints(n):
 

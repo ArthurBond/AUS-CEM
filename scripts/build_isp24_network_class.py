@@ -52,7 +52,7 @@ class ISP24:
 
     #! get network parameters !#
 
-    def _get_build_costs(self,fn="build_costs/{}_regional_build_costs_tech.csv"):
+    def _get_capital_costs(self,fn="build_costs/{}_regional_build_costs_tech.csv"):
         """
         row: pandas Series (from the DataFrame)
         snapshots: pd.DatetimeIndex or list of date strings
@@ -78,13 +78,36 @@ class ISP24:
 
         self.build_cost_cols = cost_cols
 
+        # add FOM
+
         return cost_cols
     
+    def _get_build_costs(self,fn="build_costs/{}_regional_build_costs_tech.csv"):
+        '''
+        get capital build costs
+        '''
+
+        years = list(range(self.start[0],self.end[0]+1))
+        
+        cost_cols = [f"{year-1}-{str(year)[-2:]}" for year in years]
+
+        self.build_cost_cols = cost_cols
+
+        return cost_cols
+
+
+    def _get_marginal_costs(self):
+        '''
+        add time varying marginal costs
+        '''
+
     #! simple network components !#
 
     def _initialise_parameters(self):
 
-        self._get_build_costs()
+        # self._get_build_costs()
+
+        self._get_capital_costs()
 
     def add_snapshots(self):
         '''
@@ -106,6 +129,11 @@ class ISP24:
         # convert to multiindex and assign to network
         self.n.set_snapshots(pd.MultiIndex.from_arrays([snapshots.year, snapshots]))
         self.n.investment_periods = years
+
+        # if self.step % 2 == 1:
+        #     raise ValueError("Step size must be even.") 
+
+        self.n.snapshot_weightings.loc[:, :] = self.step / 2
 
         self._initialise_parameters()
 
@@ -147,8 +175,24 @@ class ISP24:
             if fn.endswith(".csv"):
                 df = pd.read_csv(demandpath + subregion)
                 newdf = df.set_index(["Year","Month","Day"])
-                demand = newdf.loc[self.start:self.end:self.step].values.flatten()
+                demand = newdf.loc[self.start:self.end].values.flatten()[::self.step]
                 bus = subregion.split('_')[0]
+
+                # get average
+
+                # flat = newdf.loc[self.start:self.end].values.flatten()
+
+                # # Trim to a multiple of step
+                # n = len(flat) // self.step * self.step
+                # flat_trimmed = flat[:n]
+
+                # # Reshape and average
+                # demand = flat_trimmed.reshape(-1, self.step).mean(axis=1)
+
+                # # If you want to keep the remainder (last chunk), average it too:
+                # if len(flat) % self.step != 0:
+                #     last_avg = flat[n:].mean()
+                #     demand = np.concatenate([demand, [last_avg]])
 
                 self.n.add("Load",
                     name=f"Load_{bus}",
@@ -161,13 +205,35 @@ class ISP24:
         '''
         linkdf = pd.read_csv(self.path + fn)
 
+        # p_max_pu and p_min_pu shenanigans
+
         for _,row in linkdf.iterrows():
-            self.n.add("Link",row['Plain Name'],
-                    bus0 = row['Bus0'],
-                    bus1 = row['Bus1'],
-                    type    = 'AC',
-                    carrier = 'AC',
-                    p_nom_extendable=True)
+            
+            if row["Inter-regional"]:
+                #add efficiency with time series using timeslice
+                # dont think about marginal cost its too much
+                # might need to set active to be true
+                # intraregional has efficiency of 1
+            
+                self.n.add("Link",row['Plain Name'],
+                        bus0 = row['Bus0'],
+                        bus1 = row['Bus1'],
+                        type    = 'AC',
+                        carrier = 'AC',
+                        p_nom = 1e6, # use this as an estimate
+                        p_min_pu = -1,
+                        efficiency=0.9)
+                    # p_nom_extendable=True)
+            else:
+                self.n.add("Link",row['Plain Name'],
+                        bus0 = row['Bus0'],
+                        bus1 = row['Bus1'],
+                        type    = 'AC',
+                        carrier = 'AC',
+                        p_nom = 1e6, # use this as an estimate
+                        p_min_pu = -1,
+                        efficiency=1)
+            # check if there's any difference with transmission losses or not
 
         self.n.links.loc['NNSW-SQ Terranora','type'] = "DC"
         self.n.links.loc['VIC-CSA Murraylink','type'] = "DC"
@@ -213,6 +279,7 @@ class ISP24:
         df = pd.read_csv(self.trace_path + fn)
         timeslice = {}
         regions = ("NSW","QLD","VIC","TAS","SA")
+        self.regions = regions
 
         day_type_map = {
             "Hot Day" : "SP",
@@ -349,8 +416,8 @@ class ISP24:
         cap_col_dict = self._get_seasonal_columns_from_timeslice()
 
         # track planned outage pattern usage
-        outage_pattern = 0
-        odf = pd.read_csv(self.path + fns[3]).T
+        # outage_pattern = 0
+        # odf = pd.read_csv(self.path + fns[3]).T
 
         # ! consider adding project status as part of carrier info
         for genName in existing_units.Generator.unique():
@@ -420,11 +487,11 @@ class ISP24:
                         # outage_mask = (0,)
 
                         # if existing_map.loc[genName,"Technology type"] in ("Black Coal", "Brown Coal", "CCGT"):
-                        outage_mask = odf.iloc[outage_pattern % 200].values
+                        # outage_mask = odf.iloc[outage_pattern % 200].values
 
-                        print(outage_mask)
+                        # print(outage_mask)
 
-                        outage_pattern += 1
+                        # outage_pattern += 1
 
                         # outages are forced in manually using p_max_pu
                         self.n.add("Generator",
@@ -433,14 +500,14 @@ class ISP24:
                             carrier = genName, # see emissions_intensity/intensity.csv
                             marginal_cost = marginalCost,
                             p_nom = max_cap,
-                            p_max_pu = (capacity_t / max_cap) * outage_mask,
+                            p_max_pu = (capacity_t / max_cap), #* outage_mask,
                             build_year = 2024,
                             lifetime = retirementYear - 2024)
                             # commitable=True,
                             # start_up_cost=,
                             # shut_down_cost=,
                             # min_up_time=,
-                            # min_down_time=,
+                            # min_down_time=, ADD snapshots it needs to be down here!!!
                             # up_time_before=,
                             # down_time_before=,
                             # ramp_limit_up=,
@@ -532,7 +599,7 @@ class ISP24:
                         self.n.add("StorageUnit",
                             name = genName + " (" + unitName + ")",
                             bus  = busName,
-                            carrier = "Pumped Hydro",
+                            carrier = "Pumped Hydro (8hrs storage)",
                             marginal_cost = marginalCost,
                             p_nom = max_cap,
                             p_max_pu = capacity_t / max_cap,
@@ -658,7 +725,7 @@ class ISP24:
                         self.n.add("StorageUnit",
                             name = genName + " (" + unitName + ")",
                             bus  = busName,
-                            carrier = "Pumped Hydro",
+                            carrier = "Pumped Hydro (24hrs storage)",
                             marginal_cost = marginalCost,
                             p_nom = max_cap,
                             p_max_pu = capacity_t / max_cap,
@@ -847,7 +914,7 @@ class ISP24:
 
             print("adding",batName)
 
-            fuel = battery.loc[batName,"Fuel type"]
+            # fuel = battery.loc[batName,"Fuel type"]
             busName = battery_summary.loc[batName,"ISP sub-region"]
             marginalCost = battery_summary.loc[batName,"SRMC ($/MWh)"]
             retirementYear = battery_summary.loc[batName,"Expected retirement year"]
@@ -861,7 +928,7 @@ class ISP24:
                 self.n.add("StorageUnit",
                         name = batName + ' (' + unitName + ')',
                         bus  = busName,
-                        carrier = fuel,
+                        carrier = "Battery Storage",
                         build_year = 2024,
                         lifetime = retirementYear - 2024,
                         marginal_cost = marginalCost,
@@ -876,7 +943,7 @@ class ISP24:
             
             print("adding",batName)
 
-            fuel = battery.loc[batName,"Fuel type"]
+            # fuel = battery.loc[batName,"Fuel type"]
             busName = battery_summary.loc[batName,"ISP sub-region"]
             marginalCost = battery_summary.loc[batName,"SRMC ($/MWh)"]
             buildYear = int(row["Indicative commissioning date"][-4:])
@@ -891,53 +958,97 @@ class ISP24:
                 self.n.add("StorageUnit",
                         name = batName + ' (' + unitName + ')',
                         bus  = busName,
-                        carrier = fuel,
+                        carrier = "Battery Storage",
                         build_year = buildYear,
                         lifetime = retirementYear - buildYear,
                         marginal_cost = marginalCost,
                         p_nom = summerTypical,
                         max_hours = row['Max storage hours'])
                 
-    def add_new_entrants(self,fns = ["summary_mapping/new_entrants.csv",
-                                       "new_entrants/new_entrants_summary.csv",
-                                       "seasonal_ratings/new_gen_tech_seasonal_ratings.csv"]):
-                                    #    "maximum_capacity/anticipated_gen_caps.csv"]):
+    def add_new_entrants(self,fns =["build_costs/{}_regional_build_costs_tech.csv",
+                                    "new_entrants/new_entrants_summary.csv",
+                                    "seasonal_ratings/new_gen_tech_seasonal_ratings.csv"]):
+        # "summary_mapping/new_entrants.csv",
         '''
         add new entrants
         '''
 
         # read files
-        map     = pd.read_csv(self.path + fns[0],index_col=0)
+        # map     = pd.read_csv(self.path + fns[0],index_col=0)
+        costdf = pd.read_csv(self.path + fns[0].format(self.scenario))
         summary = pd.read_csv(self.path + fns[1],index_col=0)
-        ratings   = pd.read_csv(self.path + fns[2])
+        ratings   = pd.read_csv(self.path + fns[2],index_col=0)
+
+        ratings.columns = ["Hot Day","Typical Summer","Winter"]
         # max_caps = pd.read_csv(self.path + fns[3],index_col=0)
 
-        costs = self._get_build_costs()
+        # costs = self._get_build_costs()
+        costs = self._get_build_costs_w_snapshots()
+
 
         def get_rez_trace(name,tech,traces):
             for trace in traces:
                 if name in trace.replace("_"," ") and tech in trace:
                     print(trace)
                     return trace
-
+                
+        def expand_daily_to_snapshots(daily_series, snapshots):
+            """
+            daily_series: pd.Series indexed by date (e.g., '2024-07-01'), values = daily values
+            snapshots: pd.DatetimeIndex (e.g., '2024-07-01 00:00', '2024-07-01 12:00', ...)
+            Returns: pd.Series indexed by snapshots, with values from daily_series
+            """
+            # Ensure daily_series index is datetime.date
+            daily_series.index = pd.to_datetime(daily_series.index).date
+            # Map each snapshot to its date
+            snapshot_dates = snapshots.date
+            # Use .reindex or .map to assign daily values to each snapshot
+            expanded = pd.Series(
+                [daily_series.get(date, pd.NA) for date in snapshot_dates],
+                index=snapshots
+            )
+            return expanded
+                
+        tdict = self.timeslice_regions
+        
         for gen,row in summary.iterrows():
+            print(gen)
+
+            if "BOTN" in gen:
+                continue
+
+            if "Hydrogen" in gen:
+                continue
+
+            fuel = row["Generator type"]
+            busName = row["ISP sub-region"]
+            lifeTime = summary[summary["ISP sub-region"]==busName].loc[gen,"Economic life (years)"]
 
             if row['REZ location'] is not np.nan:
                 print((gen,row["ISP sub-region"],row['REZ location']))
                 genName = "_".join((gen,row["ISP sub-region"],row['REZ location'])).replace(" ","_")
-            
+                costrow = costdf[(costdf["Sub-region"]==busName) & (costdf["Technology type"]==gen) & (costdf["Candidate REZ"]==row["REZ location"])].iloc[0]
+                lifeTime = summary[(summary["ISP sub-region"]==busName) & (summary["REZ location"]==row["REZ location"])].loc[gen,"Economic life (years)"]
             else:
                 genName = "_".join((gen,row["ISP sub-region"])).replace(" ","_")
+                costrow = costdf[(costdf["Sub-region"]==busName) & (costdf["Technology type"]==gen)].iloc[0]
             
-            fuel = row["Generator type"]
-            busName = row["ISP sub-region"]
             marginalCost = row["SRMC ($/MWh)"]
             # buildYear = int(row["Indicative commissioning date"][-4:])
-            buildYear = 2026
-            # retirementYear = row["Expected retirement year"]
-            lifeTime = 25
+            buildYear = 2025
 
-            summerTypical = row["Summer Typical Rating"]
+            buildCosts = [costrow[cost_col]*1000 for cost_col in costs] # $/kW -> $/MW
+            # retirementYear = row["Expected retirement year"]
+
+            # print(lifeTime)
+
+            # seasonal ratings
+
+            cap_map = ratings.loc[gen]
+            tslice = tdict[row["Region"]]
+            capacity_t = tslice["DAY_TYPE"].map(cap_map)
+            expanded = expand_daily_to_snapshots(capacity_t,self.snapshots)
+            max_cap = expanded.max()
 
             if fuel == "Solar":
 
@@ -949,6 +1060,8 @@ class ISP24:
                         continue
 
                     print("adding",genName)
+
+                    fuel = "Utility Solar"
 
                     newdf = df.set_index(["Year","Month","Day"])
                     p_max_pu_vals = newdf.loc[self.start:self.end].values.flatten()
@@ -963,9 +1076,11 @@ class ISP24:
 
                     print("adding",genName)
 
+                    fuel = "Solar Thermal (15hrs storage)"
+
                     newdf = df.set_index(["Year","Month","Day"])
                     p_max_pu_vals = newdf.loc[self.start:self.end].values.flatten()
-                
+                    
                 self.n.add("Generator",
                         name = genName,
                         bus  = busName,
@@ -973,9 +1088,9 @@ class ISP24:
                         build_year = buildYear,
                         lifetime = lifeTime,
                         marginal_cost = 0,
-                        # build_cost=,
+                        capital_cost = buildCosts,
                         p_nom_extendable = True,
-                        p_nom_max = p_max_pu_vals[::self.step])
+                        p_nom_max = p_max_pu_vals[::self.step] * (expanded.values / max_cap))
                 
             if fuel == "Wind":
                 # FIX fixed and floating 
@@ -988,6 +1103,7 @@ class ISP24:
                     continue
 
                 print("adding",genName)
+
                 newdf = df.set_index(["Year","Month","Day"])
                 p_max_pu_vals = newdf.loc[self.start:self.end].values.flatten()
 
@@ -998,21 +1114,49 @@ class ISP24:
                         build_year = buildYear,
                         lifetime = lifeTime,
                         marginal_cost = 0,
-                        build_cost=,
+                        capital_cost=buildCosts,
                         p_nom_extendable = True,
-                        p_nom_max = p_max_pu_vals[::self.step])
+                        p_nom_max = p_max_pu_vals[::self.step] * (expanded.values / max_cap))
 
+            if fuel == "Gas":
 
-            # if fuel == "Battery":
-                # self.n.add("StorageUnit",
-                #             name = batName + ' (' + unitName + ')',
-                #             bus  = busName,
-                #             carrier = fuel,
-                #             build_year = buildYear,
-                #             lifetime = retirementYear - buildYear,
-                #             marginal_cost = marginalCost,
-                #             p_nom = summerTypical,
-                #             max_hours = row['Max storage hours']) > grab max storage hrs from name
+                self.n.add("Generator",
+                    name = genName,
+                    bus  = busName,
+                    carrier = gen,
+                    build_year = buildYear,
+                    lifetime = lifeTime,
+                    marginal_cost = marginalCost,
+                    capital_cost= buildCosts,
+                    p_nom_extendable = True,
+                    p_nom_max = (expanded.values / max_cap))
+                
+
+            if fuel in ("Battery","Pumped Hydro"):
+
+                self.n.add("StorageUnit",
+                            name = genName,
+                            bus  = busName,
+                            carrier = gen,
+                            build_year = buildYear,
+                            lifetime = lifeTime,
+                            marginal_cost = 0,
+                            capital_cost= buildCosts,
+                            p_nom_extendable=True,
+                            max_hours = int(re.search(r"\((\d+)hr", gen).group(1))) # grab max storage hrs from name
+                
+            # if fuel == "Pumped Hydro":
+            #     # idk
+            #     self.n.add("StorageUnit",
+            #                 name = genName,
+            #                 bus  = busName,
+            #                 carrier = gen,
+            #                 build_year = buildYear,
+            #                 lifetime = lifeTime,
+            #                 marginal_cost = marginalCost,
+            #                 p_nom_extendable=True,
+            #                 max_hours = int(re.search(r"\((\d+)hr", gen).group(1)))  # grab max storage hrs from name
+
 
             
     #! creating the network !#
@@ -1040,20 +1184,21 @@ class ISP24:
 
         self._create_trace_map()
 
-        # add generators
+        # add existing and planned generators
 
         self.generators = self.add_existing_generators()
+
+        # self._get_seasonal_columns_from_timeslice()
 
         self.cgenerators = self.add_committed_generators()
 
         self.agenerators = self.add_anticipated_generators()
 
-        # self.generators = self.add_generators()
-
-
         # add storage
 
         self.storage_units = self.add_storage_units()
+        
+        # add new entrants
 
         self.new_entrants = self.add_new_entrants()
 
@@ -1075,11 +1220,47 @@ class ISP24:
         '''
         self.n.optimize.create_model()
 
+        # remove automatic link constraints first
+
+        self.n.model.remove_constraints("Link-fix-p-upper")
+
+        # every 5 years from 2025 from GenCost 24-25 not scaled
+        emissions_budgets = [143.5656493,200.8659894,219.2252441,224.1679551,228.4645936,231.1725631]
+
+        # every 5 years from 2025 from GenCost 24-25 scaled to AEMO budget
+        emissions_budgets_scaled = [422.302025,590.8524393,644.8566561,659.3957665,672.0344386,680]
+
+        self.n.add(
+            "GlobalConstraint",
+            "CO2Limit",
+            carrier_attribute="co2_emissions",
+            sense="<=",
+            constant=150,
+            investment_period=list(range(2025,2030)))
+
         self.add_82pc_constraint()
 
         # etc ...
 
         return self.n.model.constraints
+
+    #! initialising linopy model !#
+
+    def save_network(self,save_dir = "./networks/"):
+        '''
+        Save to file with metadata
+        '''
+        # if name is taken increase version number
+        version_no = 1
+
+        file_name = f"./networks/isp24_v{version_no}_{self.interval}_{self.start[0]}-{self.start[1]}-{self.start[2]}_{self.end[0]}-{self.end[1]}-{self.end[2]}.nc"
+
+        while file_name in os.listdir(save_dir):
+            version_no += 1
+            file_name = f"./networks/isp24_v{version_no}_{self.interval}_{self.start[0]}-{self.start[1]}-{self.start[2]}_{self.end[0]}-{self.end[1]}-{self.end[2]}.nc"
+
+        self.n.export_to_netcdf(save_dir + file_name)
+
 
     #! initialising linopy model !#
 
@@ -1093,12 +1274,17 @@ class ISP24:
 
 if __name__ == "__main__":
 
-    ISP24MODEL = ISP24("Test",start=(2024,7,1),end=(2032,6,30))
+    ISP24MODEL = ISP24("12h",start=(2024,7,1),end=(2032,6,30),interval="6h",step=12)
 
     network = ISP24MODEL.create_network()
 
-    network.export_to_netcdf("./networks/isp24_v2.nc")
+    network.export_to_netcdf("./networks/isp24_v6_6h.nc")
 
-    # print(network)
-    network.optimize(solver_name="gurobi",
-                     solver_options={"LogFile": "../gurobi.log"})
+    # # print(network)
+    # network.optimize(solver_name="gurobi",
+    #                  solver_options={"LogFile": "./gurobi.log"})
+    
+    # network.export_to_netcdf("./networks/isp24_v5_12h_solved.nc")
+
+
+

@@ -1,0 +1,37 @@
+Link Name,Option Name,Forward increase,Reverse increase,Cost ($M),Easement length in km,Lead time or Earliest in Service Date,REZ Name,Additional REZ hosting capacity provided,Notes
+CQ-NQ,CQ-NQ Option 1,1100,1100,1239,350,Medium,Q3,1100,
+CQ-NQ,CQ-NQ Option 2,3000,3000,4184,750,Long,Q3,3000,
+CQ-NQ,CQ-NQ Option 2,3000,3000,4184,750,Long,Q2,800,
+CQ-GG,CQ-GG Option 1,2600,500,1300,0,"October 2030 (5 years from project approval)",,,
+SQ-CQ,SQ-CQ Option 1,900,900,820,250,"December 2028 (5 years from project approval)",Q6,900,
+SQ-CQ,SQ-CQ Option 2,0,300,77,0,Short,,,
+SQ-CQ,SQ-CQ Option 3,300,300,Non-network option costs to be provided by interested parties,,,Q6,300,
+SQ-CQ,SQ-CQ Option 4,1500,1500,1853,250,Long,Q6,1500,
+SQ-CQ,SQ-CQ Option 5,3150,3150,3287,492,Medium,group,,"Q1-Q6 path: 3000  (should there be no transmission constraints further north)"
+NNSW-SQ QNI,NNSW–SQ Option 1,730,900,964,460.5,Medium,,,
+NNSW-SQ QNI,NNSW–SQ Option 2,1260,1700,1309,460.5,Medium,,,
+NNSW-SQ QNI,NNSW–SQ Option 3,200,200,Non-network option costs to be provided by interested parties,,,,,
+NNSW-SQ QNI,NNSW–SQ Option 4,1800,2000,4279,765,Long,,,
+NNSW-SQ QNI,NNSW–SQ Option 5,3000,2250,"2600 (NSW works) 2659 (QLD works)",616,Long,group,,SWQLD1 : 700
+CNSW–NNSW QNI,CNSW-NNSW Option 1,3000,3000,1834,225,Medium,N2,2000,
+CNSW–NNSW QNI,CNSW-NNSW Option 2,3000,3000,1493,217,Long,N2,3000,
+CNSW–NNSW QNI,CNSW-NNSW Option 3,3600,3600,2452,225,Long,group,,N1+N2:3600
+CNSW–NNSW QNI,CNSW-NNSW Option 4,1750,2000,2544,280,Long,N2,2000,
+CNSW–NNSW QNI,CNSW-NNSW Option 5,1750,2000,2796,350,Long,N1,2000,
+CNSW­–SNW North,CNSW-SNW Option 1,5000,0,926,105,Medium,N10,2000,
+CNSW–SNW South,"CNSW-SNW Option 2",4500,0,1550,114,Medium,N11,2000,
+CNSW–SNW South,"CNSW-SNW Option 2b",1200,0,553,114,Medium,,,
+CNSW­–SNW North AND South,CNSW-SNW Option 3,8600,0,2038,219,Long,,"N10: 2000 N11: 2000",Handle manually
+CNSW­–SNW North,CNSW-SNW Option 4,4400,0,2470,418,Long,N10,2000,
+CNSW­–SNW North,CNSW-SNW Option 6a,4400,0,1833,263,Long,,-,
+CNSW­–SNW North,CNSW-SNW Option 6b,4400,0,1411,156,Long,,-,
+SNSW–CNSW Humelink,"SNSW-CNSW Option 1 (HumeLink)",2200,2200,4892,360,2026-27,group,"N6+N7:2200 (N6:1500) N5:800",group and prereq
+SNSW–CNSW Humelink,SNSW-CNSW Option 2,2000,2000,2450,260,Long,N6,2000,prereq
+SNSW–CNSW Humelink,SNSW-CNSW Option 3,6000,6000,3014,481,Long,group,N5+N6: 6000,group and prereq
+SNSW–CNSW Humelink,SNSW-CNSW Option 4,3000,3000,2370,481,Long,group,N5+N6: 3000,group and prereq
+VIC–SNSW VNI,VIC-SNSW Option 1 - VNI West (Kerang),1935,1669,"3614 (Note 9)",438,Long,group,"V2: 1580 V3 (WRL timing): 1460 V3 (WRL & VNI timing): 200 N5: 900",
+TAS-VIC Marinus Link,TAS-VIC Option 1(Marinus Link stage 1),"750 Basslink and Marinus Link 1 combined transfer limit 1212(Note 4)","750 Basslink and Marinus Link 1 combined transfer limit  1962","2701 (See note 7)","~90 (underground cable) ~94 (HVAC new easement) ",July 2029,,,handle basslink and marinus link group constraint
+TAS-VIC Marinus Link,TAS-VIC Option 2 (Marinus Link stage 2),"750 Basslink and Marinus Link1&2 combined transfer limit 1962","750 Basslink and Marinus Link1&2 combined transfer limit 1712","1591 (See note 7)","0 (underground cable) 0 (HVAC new easement) ",July 2031,,,handle basslink and marinus link group constraint
+VIC-SESA Heywood,VIC-SESA Option 1,1640,1640,892,240,Long,S1,1640,
+VIC-SESA Heywood,VIC-SESA Option 2,3000,3000,1363,240,Long,S1,3000,
+SESA-CSA,SESA-CSA Option 1,3000,3000,1807,290,Long,S1,3000,

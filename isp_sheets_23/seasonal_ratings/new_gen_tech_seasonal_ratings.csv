@@ -6,9 +6,9 @@ CCGT with CCS,81,86,90
 Biomass,95,100,100
 Large scale Solar PV,100,100,100
 Solar Thermal (15hrs storage),100,100,100
-Battery storage (1hr storage),100,100,100
-Battery storage (2hrs storage),100,100,100
-Battery storage (4hrs storage),100,100,100
+Battery Storage (1hr storage),100,100,100
+Battery Storage (2hrs storage),100,100,100
+Battery Storage (4hrs storage),100,100,100
 Battery Storage (8hrs storage),100,100,100
 Wind,100,100,100
 Wind - offshore (fixed),100,100,100
