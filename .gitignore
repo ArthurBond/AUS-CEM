@@ -10,6 +10,7 @@ Traces/**/*.csv
 *.xls
 *.xlsm
 *.log
+networks/*
 **/*.log
 *.pdf
 scripts/draft.py
