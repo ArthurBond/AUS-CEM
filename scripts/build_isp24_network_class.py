@@ -472,6 +472,20 @@ class ISP24:
                             lifetime = retirementYear - 2024)
                     elif fuel == "Water":
                         # fix this
+                        # ignore -> will have to model it separately
+
+                        # TAS done as three generators using inflows and long duration energy storage as upper
+
+                        # small hydro gens modelled as gens with upper generation limit (no inflows)
+
+                        # pumped hydro as closed system
+
+                        # tumut 3 only has 600 mw pumping capacity but 1800 mw generation capacity e.g. p_min_pu = -0.3333
+
+                        # Snowy 2.0 pumped hydro
+
+                        # Snowy scheme is 
+
                         self.n.add("Generator",
                             name = genName + " (" + unitName + ")",
                             bus  = busName,
@@ -1131,6 +1145,8 @@ class ISP24:
                     p_nom_extendable = True,
                     p_nom_max = (expanded.values / max_cap))
                 
+
+            # add PHES build limits
 
             if fuel in ("Battery","Pumped Hydro"):
 

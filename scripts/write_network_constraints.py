@@ -8,7 +8,9 @@ import pandas as pd
 
 # add gens in later using geocoding
 
-def add_rez_variables():
+def add_rez_variables(n,rez):
+
+    rezDF = pd.read_csv("")
 
     return rez_vars_dict
 
@@ -24,7 +26,6 @@ def add_flow_path_augmentation_constraints(n, years, fpMap, fpCost):
     aug_dict = dd(dict)
 
     # for link in n.links.index.to_list():
-
 
     mapDF  = pd.read_csv("flow_rez_map.csv")
 
@@ -95,7 +96,7 @@ def add_flow_path_augmentation_constraints(n, years, fpMap, fpCost):
 
         if rez_name:
 
-            n.model.add_constraint( link_flow <= flow_upper_initial + aug_option*forward_increase,
+            n.model.add_constraint( rez_group <=  + aug_option*forward_increase,
                                    name=f"{aug_option}_{year}_upper")
 
 
