@@ -1,0 +1,37 @@
+REZ,ID,Limit,Day Type
+REZLimit_N1_North West NSW,N1,171,
+REZLimit_N10_Hunter Coast,N10,5650,
+REZLimit_N11_Illawarra Coast,N11,1000,
+REZLimit_N2_New England,N2,577,
+REZLimit_N3_Central-West Orana,N3,900,
+REZLimit_N4_Broken Hill,N4,250,
+REZLimit_N5_South West NSW,N5,215,
+REZLimit_N6_Wagga Wagga,N6,1100,
+REZLimit_N8_Cooma-Monaro,N8,350,
+REZLimit_N9_Hunter-Central Coast,N9,400,
+REZLimit_Q1_Far North Qld,Q1,750,
+REZLimit_Q2_North Qld Clean Energy Hub,Q2,700,
+REZLimit_Q5_Barcaldine,Q5,85,
+REZLimit_Q9_Banana,Q9,150,
+REZLimit_S10_South East SA Coast,S10,0,
+REZLimit_S2_Riverland,S2,130,
+REZLimit_S4_Yorke Peninsula,S4,100,
+REZLimit_S6_Leigh Creek,S6,0,
+REZLimit_S7_Roxby Downs,S7,500,
+REZLimit_S8_Eastern Eyre Peninsula,S8,300,
+REZLimit_S9_Western Eyre Peninsula,S9,0,
+REZLimit_T1_North East Tasmania,T1,400,
+REZLimit_V1_Ovens Murray,V1,350,
+REZLimit_T2_North West Tasmania,T2,277,TAS Hot Day
+REZLimit_T2_North West Tasmania,T2,277,TAS Typical Summer
+REZLimit_T2_North West Tasmania,T2,112,TAS Winter
+REZLimit_T3_Central Highlands,T3,668,TAS Winter
+REZLimit_T3_Central Highlands,T3,527,TAS Hot Day
+REZLimit_T3_Central Highlands,T3,527,TAS Typical Summer
+REZLimit_V2_Murray River,V2,640,VIC Winter
+REZLimit_V2_Murray River,V2,440,VIC Hot Day
+REZLimit_V2_Murray River,V2,440,VIC Typical Summer
+REZLimit_V6_Central North VIC,V6,1300,VIC Winter
+REZLimit_V6_Central North VIC,V6,650,VIC Hot Day
+REZLimit_V6_Central North VIC,V6,650,VIC Typical Summer
+

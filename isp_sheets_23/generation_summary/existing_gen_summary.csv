@@ -1,18 +1,18 @@
 Generator,Generator type,Region,ISP sub-region,REZ location,Fuel/technology type,Maximum capacity (MW),Summer rating (MW),Summer typical rating (MW),Winter rating (MW),Maintenance duration (%),FOM ($/kW/annum),VOM ($/MWh sent-out),Heat rate (GJ/MWh HHV s.o.),Fuel cost ($/GJ),Emissions (kg/MWh),MLF,Auxiliary load (%),SRMC ($/MWh),Expected retirement year
 Bayswater,Steam Sub Critical,NSW,CNSW,N/A,Black Coal NSW,2715,2595,2715,2715,5.48,64.50,5.10,9.45,2.54,889.20,0.97,5.46,29.07,2033
-Eraring,Steam Sub Critical,NSW,SNW,N/A,Black Coal NSW,2880,0,0,0,5.48,64.50,5.10,9.55,2.64,878.94,0.98,5.46,30.34,2025
-Mt Piper,Steam Sub Critical,NSW,CNSW,N/A,Black Coal NSW,1390,1380,1390,1430,5.48,64.50,5.10,9.25,2.64,801.16,0.92,5.46,29.56,2040
-Vales Point B,Steam Sub Critical,NSW,SNW,N/A,Black Coal NSW,1320,1320,1320,1320,5.48,64.50,5.10,9.68,2.84,944.70,0.99,5.46,32.59,2033
+Eraring,Steam Sub Critical,NSW,SNW,N/A,Black Coal NSW,2880,0,0,0,5.48,64.50,5.10,9.55,2.64,878.94,0.98,5.46,30.34,2027
+Mt Piper,Steam Sub Critical,NSW,CNSW,N/A,Black Coal NSW,1390,1380,1390,1430,5.48,64.50,5.10,9.25,2.64,801.16,0.92,5.46,29.56,2035
+Vales Point B,Steam Sub Critical,NSW,SNW,N/A,Black Coal NSW,1320,1320,1320,1320,5.48,64.50,5.10,9.68,2.84,944.70,0.99,5.46,32.59,2028
 Callide B,Steam Sub Critical,QLD,CQ,N/A,Black Coal QLD,700,0,0,0,5.48,63.48,5.02,9.16,2.33,942.84,0.91,6.67,26.39,2028
-Callide C,Steam Super Critical,QLD,CQ,N/A,Black Coal QLD,844,854,886,886,5.48,63.48,5.02,9.30,2.33,873.95,0.91,6.67,26.72,2051
-Gladstone,Steam Sub Critical,QLD,GG,N/A,Black Coal QLD,1680,1680,1680,1680,5.48,63.48,5.02,9.47,2.78,985.80,0.93,6.67,31.40,2035
-Kogan Creek,Steam Super Critical,QLD,SQ,N/A,Black Coal QLD,744,710,730,750,5.48,63.48,5.02,8.80,1.62,861.93,0.97,6.67,19.27,2042
-Millmerran,Steam Super Critical,QLD,SQ,N/A,Black Coal QLD,852,670,800,852,5.48,63.48,5.02,9.21,1.47,825.25,0.98,6.67,18.58,2051
-Stanwell,Steam Sub Critical,QLD,CQ,N/A,Black Coal QLD,1460,1460,1460,1460,5.48,63.48,5.02,9.07,2.43,863.46,0.92,6.67,27.06,2043
+Callide C,Steam Super Critical,QLD,CQ,N/A,Black Coal QLD,844,854,886,886,5.48,63.48,5.02,9.30,2.33,873.95,0.91,6.67,26.72,2030
+Gladstone,Steam Sub Critical,QLD,GG,N/A,Black Coal QLD,1680,1680,1680,1680,5.48,63.48,5.02,9.47,2.78,985.80,0.93,6.67,31.40,2029
+Kogan Creek,Steam Super Critical,QLD,SQ,N/A,Black Coal QLD,744,710,730,750,5.48,63.48,5.02,8.80,1.62,861.93,0.97,6.67,19.27,2037
+Millmerran,Steam Super Critical,QLD,SQ,N/A,Black Coal QLD,852,670,800,852,5.48,63.48,5.02,9.21,1.47,825.25,0.98,6.67,18.58,2030
+Stanwell,Steam Sub Critical,QLD,CQ,N/A,Black Coal QLD,1460,1460,1460,1460,5.48,63.48,5.02,9.07,2.43,863.46,0.92,6.67,27.06,2035
 Tarong,Steam Sub Critical,QLD,SQ,N/A,Black Coal QLD,1400,1400,1400,1400,5.48,63.48,5.02,9.21,3.04,886.60,0.97,6.67,33.05,2036
 Tarong North,Steam Super Critical,QLD,SQ,N/A,Black Coal QLD,450,443,443,443,5.48,63.48,5.02,8.65,3.04,886.60,0.97,6.67,31.37,2037
 Loy Yang A Power Station,Steam Sub Critical,VIC,VIC,N/A,Brown Coal VIC,2210,2080,2190,2210,5.48,163.64,4.78,12.16,0.76,1168.86,0.98,8.21,14.02,2035
-Loy Yang B,Steam Sub Critical,VIC,VIC,N/A,Brown Coal VIC,1160,1090,1115,1160,5.48,163.64,4.78,12.54,0.76,1111.15,0.98,8.21,14.31,2047
+Loy Yang B,Steam Sub Critical,VIC,VIC,N/A,Brown Coal VIC,1160,1090,1115,1160,5.48,163.64,4.78,12.54,0.76,1111.15,0.98,8.21,14.31,2032
 Yallourn W,Steam Sub Critical,VIC,VIC,N/A,Brown Coal VIC,1450,0,0,0,5.48,163.64,4.78,13.90,0.75,1286.60,0.96,8.21,15.23,2028
 Tallawarra,CCGT,NSW,SNW,N/A,CCGT,440,405,415,425,5.48,12.53,8.79,6.99,15.93,370.97,0.99,1.75,120.17,2043
 Condamine A,CCGT,QLD,SQ,N/A,CCGT,144,139,139,144,5.48,12.53,8.79,7.29,15.73,448.78,0.98,1.75,123.43,2039

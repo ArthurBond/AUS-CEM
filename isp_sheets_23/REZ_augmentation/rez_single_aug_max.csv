@@ -1,0 +1,45 @@
+Name,ID,Max,Date From
+N1_Augmentation 1,N1,50000,1/07/2032
+N10_Augmentation 1,N10,50000,1/07/2030
+N10_Augmentation 2,N10,2000,1/12/2028
+N11_Augmentation 1,N11,50000,1/07/2032
+N2 Option 1,N2,1000,1/07/2030
+N2_Augmentation 1,N2,50000,1/07/2034
+N2_Augmentation 2,N2,2000,1/09/2028
+N2_Augmentation 3,N2,3000,1/07/2034
+N3_Augmentation 1,N3,1500,1/07/2030
+N3_Augmentation 2,N3,3000,1/07/2028
+N3_Augmentation 3,N3,1500,1/12/2028
+N3_Augmentation 6,N3,50000,1/07/2030
+N4_Augmentation 1,N4,50000,1/07/2032
+N5_Augmentation 1,N5,4100,1/07/2032
+N5_Augmentation 2,N5,800,1/03/2027
+N5_Augmentation 3,N5,800,1/07/2029
+N5_Augmentation 6,N5,900,1/12/2029
+N5_Augmentation 7,N5,50000,1/07/2032
+N6_Augmentation 1,N6,1500,1/07/2029
+N8_Augmentation 1,N8,50000,1/07/2030
+N9 Option 2,N9,500,1/07/2030
+N9_Augmentation 1,N9,50000,1/07/2030
+Q1_Augmentation 1,Q1,50000,1/07/2032
+Q2_Augmentation 1,Q2,50000,1/07/2030
+Q2_Augmentation 2,Q2,1500,1/12/2029
+Q5_Augmentation 1,Q5,50000,1/07/2032
+Q9_Augmentation 1,Q9,50000,1/07/2030
+S2_Augmentation 1,S2,50000,1/07/2029
+S2_Augmentation 2,S2,800,1/03/2027
+S4_Augmentation 1,S4,50000,1/07/2030
+S6_Augmentation 1,S6,50000,1/07/2029
+S7_Augmentation 1,S7,50000,1/07/2029
+S8_Augmentation 1,S8,50000,1/07/2029
+S9_Augmentation 1,S9,50000,1/07/2032
+T1_Augmentation 1,T1,50000,1/07/2030
+T2_Augmentation 1,T2,50000,1/07/2029
+T3 Option 1,T3,690,1/07/2029
+T3_Augmentation 1,T3,675,1/07/2037
+V2_Augmentation 1,V2,50000,1/07/2032
+V2_Augmentation 2,V2,400,1/03/2027
+V2_Augmentation 3,V2,112,1/10/2025
+V2_Augmentation 4,V2,1580,1/12/2029
+V6_Augmentation 1,V6,50000,1/07/2032
+V6_Augmentation 2,V6,12,1/10/2025

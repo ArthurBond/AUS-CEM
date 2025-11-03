@@ -11,6 +11,9 @@ Traces/**/*.csv
 *.xlsm
 *.log
 networks/*
+solutions/*
+*.log
 **/*.log
 *.pdf
 scripts/draft.py
+figures/*

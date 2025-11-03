@@ -1,0 +1,31 @@
+Fuel/Technology type,Auxiliary load (% of capacity)
+Black Coal QLD,0.0667
+Black Coal NSW,0.0546
+Brown Coal VIC,0.0821
+Hydro,0.0034
+Gas-powered steam turbine,0.0500
+CCGT,0.0175
+OCGT,0.0061
+Liquid Fuel,0.0067
+Solar,0.0002
+Wind,0.0007
+Hydrogen-based gas turbines,0.0150
+Battery Storage,0.0000
+OCGT (small GT),0.0170
+OCGT (large GT),0.0110
+CCGT,0.0250
+CCGT with CCS,0.0920
+Biomass,0.0730
+Large scale Solar PV,0.0002
+Solar Thermal (15hrs storage),0.01000
+Battery storage (1hr storage),0.00
+Battery storage (2hrs storage),0.00
+Battery storage (4hrs storage),0.00
+Battery Storage (8hrs storage),0.00
+Wind - offshore (fixed),0.0007
+Wind - offshore (floating),0.0007
+Pumped Hydro (8hrs storage),0.0050
+Pumped Hydro (24hrs storage),0.0050
+Pumped Hydro (48hrs storage),0.0050
+BOTN - Cethana,0.0050
+Hydrogen reciprocating engines,0.0400
